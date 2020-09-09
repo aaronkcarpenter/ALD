@@ -1,11 +1,9 @@
 import React from 'react'
-import { SignIn, signIn } from '../auth/SignIn'
+import { SignIn } from './SignIn'
+import { SignInForm } from './SignInForm';
 
-const SignIn = () => {
+const SignInF = () => {
 
-  const onSignInClicked = async() => {
-    await signIn(emailValue, passwordValue);
-  }
   return (
     <div>
       <form>
@@ -14,9 +12,12 @@ const SignIn = () => {
         <label>Password</label>
         <input type='password' placeholder='Enter Password'/>
       </form>
+      <button type='submit'>Submit</button>
       
     </div>
   )
 }
 
-export default SignIn
+// NOT IN USE
+
+export default SignInF

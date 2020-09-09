@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { getCurrentUser } from './GetCurrentUser'
 import { addAuthListener } from './AddAuthListener'
 
-export const useAuth = () => {
+const useAuth = () => {
   const [authInfo, setAuthInfo] = useState(() => {
     const user = getCurrentUser();
     const isLoading = !user;
@@ -17,3 +17,5 @@ export const useAuth = () => {
   }, []);
   return authInfo;
 }
+
+export default useAuth
