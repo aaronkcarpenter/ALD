@@ -1,10 +1,17 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
+import { useAuth } from './auth/UseAuth';
+
+
+import SignIn from './components/SignIn';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Capstone Project</h1>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path='/' component={SignIn} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
