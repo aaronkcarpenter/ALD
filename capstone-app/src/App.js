@@ -1,20 +1,24 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 
 import useAuth from './auth/UseAuth';
 import SignInForm from './auth/SignInForm';
+import SignOutButton from './auth/SignOutButton';
 import ProtectedRoute from './auth/ProtectedRoute'
+import Home from './components/Home'
+import { auth } from 'firebase';
 
 function App() {
   const {isLoading, user } = useAuth();
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/sign-in' component={SignInForm} />
-        <Route path='/sign-up' />
+        <Route exact path='/' component={SignInForm} />
+        <Route path='/signup' />
         <Route path='/subscribe' />
-        <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/home' />
+        <Route path='/logout' component={SignOutButton}/>
+        <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/home' component={Home} />
         <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/shop' />
         <ProtectedRoute isAuthed={!!user} isLoading={isLoading} exact path='/profile/:id' />
         <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/news' />
@@ -26,6 +30,7 @@ function App() {
         <ProtectedRoute isAuthed={!!user} isLoading={isLoading} exact path='/shop/:id' />
         <ProtectedRoute isAuthed={!!user} isLoading={isLoading} exact path='/lookbook/:id' />
         <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/checkout' />
+        {/* <ProtectedRoute path='/logout' component={SignOutButton}/> */}
       </Switch>
     </BrowserRouter>
   );

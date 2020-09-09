@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 
-export const signOut = async () => {
+// Sign Out Wrapper Function
+const signOut = async () => {
   try {
     await firebase.auth().signOut;
 
@@ -9,3 +10,5 @@ export const signOut = async () => {
   }
   
 }
+
+export default signOut
