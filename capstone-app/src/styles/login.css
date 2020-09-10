@@ -9,7 +9,7 @@ body{
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  padding-top: 400px;
+  padding-top: 300px;
 }
 
 .login-form{

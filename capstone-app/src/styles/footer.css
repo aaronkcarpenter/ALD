@@ -6,11 +6,11 @@ body{
   color: #181818;
 }
 .footer-container{
-  padding-top: 100px;
+  padding-top: 210px;
 }
 
 .footer{
-  padding-top: 30px;
+  padding-top: 20px;
   background: #f7f7f7;
   border-top: 1px solid #e5e5e5;
   font-family: "DIN W01 Regular",Arial,sans-serif;
@@ -44,6 +44,7 @@ h4{
 .footer-nav{
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-size: 8px;
 }
 
 ul{
@@ -69,6 +70,33 @@ li{
   position: relative;
 }
 
+.submit-button{
+  position: absolute;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  right: 0;
+  padding: 0;
+  margin-bottom: 1px;
+  font-family: "DIN W01 Regular",Arial,sans-serif;
+  letter-spacing: 0.1em;
+}
+
+input{
+  overflow: hidden;
+  line-height: 1.15;
+  margin: 0;
+  user-select: none;
+  white-space: pre;
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  font-size: 11px;
+}
+
 form{
   display: block;
   margin-top: 0em;
@@ -78,6 +106,21 @@ form{
   display: flex;
   align-items: center;
   margin-bottom: 0;
+  line-height: 42px;
+  padding-right: 60px;
+  border-top: 1px solid #e5e5e5;
+  height: 42px;
+}
+
+.form-control{
+  text-transform: uppercase;
+  font-family: "DIN W01 Regular",Arial,sans-serif;
+  color: #181818;
+  letter-spacing: 0.1em;    border-radius: 0;
+  border: none;
+  padding: 11.76471px 0;
+  width: 100%;
+  background: none;
 }
 
 .footer-nav_item{
@@ -105,6 +148,10 @@ a{
 .copyright{
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 3em;
+  margin-inline-end: 0px;
 }
 
 
@@ -165,6 +212,12 @@ a{
 
 @media only screen and (min-width: 1025px){
   .copyright{
+    font-size: 0.6875rem;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+  .submit-button{
     font-size: 0.6875rem;
   }
 }
