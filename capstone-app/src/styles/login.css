@@ -1,0 +1,104 @@
+body{
+  font-weight: 400;
+  line-height: 1.41;
+  letter-spacing: 0.05em;
+  font-family: "Sohne",Arial,sans-serif;
+}
+
+.form-container{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-top: 400px;
+}
+
+.login-form{
+
+}
+
+.page-header{
+  font-family: "Financier Display",serif;
+  font-weight: 700;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.email-input{
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid #181818;
+  text-transform: uppercase;
+  font-family: "DIN W01 Regular",Arial,sans-serif;
+  color: #181818;
+  letter-spacing: 0.1em;
+  width: 100%;
+  background: none;
+  line-height: 1;
+  border-radius: 0;
+  overflow: visible;
+  text-align: start;
+  word-spacing: normal;
+  text-indent: 0px;
+  cursor: text;
+  font: 400 13.3333px Arial;
+
+}
+
+.password-input{
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid #181818;
+  text-transform: uppercase;
+  font-family: "DIN W01 Regular",Arial,sans-serif;
+  color: #181818;
+  letter-spacing: 0.1em;
+  width: 100%;
+  background: none;
+  line-height: 1;
+  border-radius: 0;
+  overflow: visible;
+  text-align: start;
+  word-spacing: normal;
+  text-indent: 0px;
+  cursor: text;
+  font: 400 13.3333px Arial;
+}
+
+.forgotten-password-link{
+  transition: all 0.4s linear;
+  text-decoration: none;
+  color: #181818;
+  text-align: right;
+  font-size: 12px;
+}
+
+.button{
+  margin-right: 0;
+  background-color: #181818;
+  color: #fff;
+  outline: 0 none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  min-height: 60px;
+  padding: 10px 20px;
+  font-family: "DIN W01 Regular",Arial,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  width: 100%;
+  max-width: 335px;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  margin-top: 15px;
+}
+
+.button:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}

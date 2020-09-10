@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import signIn from './SignIn';
+import '../styles/login.css'
 // import { ResetPasswordForm } from './ResetPasswordForm';
 
 export const SignInForm = () => {
@@ -27,24 +28,44 @@ export const SignInForm = () => {
   }
 
   return (
-    <div>
-      <label>Email</label>
-      <input
-        name='email'
-        value={emailValue}
-        placeholder='Enter Email Address'
-        onChange={e => setEmailValue(e.target.value)} />
-      <input
-        name='password'
-        type='password'
-        value={passwordValue}
-        placeholder='Enter Password'
-        onChange={e => setPasswordValue(e.target.value)} />
-      <button
-        disabled={!emailValue || !passwordValue}
-        onClick={onSignInClicked}
-      >Sign In</button>
-
+    <div className='form-container'>
+        <div className='login-form'>
+          {/* <form method='post' action='/home' className='customer-login'> */}
+          <form className='customer-login'>
+            <div className='title'>
+              <h1 className='page-header'>Login</h1>
+            </div>
+            <div className='email-and-password'>
+              <div className='email'>
+                <input
+                  className='email-input'
+                  name='email'
+                  value={emailValue}
+                  placeholder='Email'
+                  onChange={e => setEmailValue(e.target.value)} />
+              </div>
+              <div className='password'>
+                <input
+                  className='password-input'
+                  name='password'
+                  type='password'
+                  value={passwordValue}
+                  placeholder='Enter Password'
+                  onChange={e => setPasswordValue(e.target.value)} />
+                <label className='forgotten-password'>
+                  <a className='forgotten-password-link' href='/recover'>Forgot your password?</a>
+                </label>
+              </div>
+            </div>
+            <div className='form-button-area'>
+              <button
+                className='button'
+                disabled={!emailValue || !passwordValue}
+                onClick={onSignInClicked}>Sign In
+              </button>
+            </div>
+          </form>
+        </div>
     </div>
   );
 }
