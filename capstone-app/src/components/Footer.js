@@ -7,13 +7,13 @@ const Footer = () => {
     <div className='footer-container'>
       <div className='footer container'>
         <h4>Mailing List</h4>
-        <ul class='footer-nav'>
+        <ul className='footer-nav'>
           <li>
             <form className='email_signup' target='_blank'>
               <div className='form-group'>
                 <input className='form-control' type='email' name='email'
                 placeholder='Your Email' />
-                <input type='submit' value='Submit' className='submit-button' />
+                <input type='submit' value='SUBMIT' className='submit-button' />
               </div>
             </form>
           </li>
