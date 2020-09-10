@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import useAuth from './auth/UseAuth';
 import SignInForm from './auth/SignInForm';
 import SignOutButton from './auth/SignOutButton';
@@ -33,6 +34,7 @@ function App() {
         <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/checkout' />
         {/* <ProtectedRoute path='/logout' component={SignOutButton}/> */}
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }
