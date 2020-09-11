@@ -61,7 +61,8 @@ export const SignInForm = () => {
               <button
                 className='button'
                 disabled={!emailValue || !passwordValue}
-                onClick={onSignInClicked}>Sign In
+                onClick={onSignInClicked}
+                >Sign In
               </button>
             </div>
           </form>
