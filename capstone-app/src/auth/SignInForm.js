@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import signIn from './SignIn';
-import { signInWithGoogle } from '../index'
+// import { signInWithGoogle } from '../index'
+import signInWithGoogle from './signInWithGoogle'
 import '../styles/login.css'
 // import { ResetPasswordForm } from './ResetPasswordForm';
 
@@ -25,14 +26,15 @@ export const SignInForm = () => {
   }
 
   const onSignInWithGoogleClicked = async () => {
-    // Firebase code goes here
+    await signInWithGoogle();
+    history.push('/');
   }
 
   return (
     <div className='form-container'>
         <div className='login-form'>
           {/* <form method='post' action='/home' className='customer-login'> */}
-          <form className='customer-login'>
+          <form className='customer-login' action='/home'>
             <div className='title'>
               <h1 className='page-header'>Login</h1>
             </div>
@@ -70,7 +72,7 @@ export const SignInForm = () => {
               <button
                 className='button'
                 disabled={!emailValue || !passwordValue}
-                // onClick={signInWithGoogle}
+                onClick={signInWithGoogle}
                 >Sign In With Google
               </button>
             </div>

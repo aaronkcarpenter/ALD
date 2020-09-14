@@ -20,6 +20,15 @@ import App from './App';
 
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+  
+  export const auth = firebase.auth();
+  export const firestore = firebase.firestore();
+  
+  const provider = new firebase.auth.GoogleAuthProvider();
+  provider.setCustomParameters({ promp: 'select_account' });
+  
+  export const signInWithGoogle = () => auth.signInWithPopup(provider)
+  export default firebase 
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,13 +37,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-export const auth = firebase.auth();
-export const firestore = firebase.firestore();
-
-const provider = new firebase.auth.GoogleAuthProvider();
-provider.setCustomParameters({ promp: 'select_account' });
-
-export const signInWithGoogle = () => auth.signInWithPopup(provider)
-export default firebase 
 
 
