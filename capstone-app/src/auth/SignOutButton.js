@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import signOut  from './SignOut';
+import '../styles/logout.css'
 
 const SignOutButton = () => {
 
