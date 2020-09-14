@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import signIn from './SignIn';
+import { signInWithGoogle } from '../index'
 import '../styles/login.css'
 // import { ResetPasswordForm } from './ResetPasswordForm';
 
@@ -63,6 +64,14 @@ export const SignInForm = () => {
                 disabled={!emailValue || !passwordValue}
                 onClick={onSignInClicked}
                 >Sign In
+              </button>
+            </div>
+            <div className='form-button-area'>
+              <button
+                className='button'
+                disabled={!emailValue || !passwordValue}
+                // onClick={signInWithGoogle}
+                >Sign In With Google
               </button>
             </div>
           </form>
