@@ -7,7 +7,7 @@ import 'firebase/firestore';
 import './index.css';
 import App from './App';
 
-  var firebaseConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyCGtpXvKcsOpfhF_sRrhB4dQhoaKio89ds",
     authDomain: "app-academy-capstone-project.firebaseapp.com",
     databaseURL: "https://app-academy-capstone-project.firebaseio.com",
@@ -27,5 +27,14 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+export const auth = firebase.auth();
+export const firestore = firebase.firestore();
+
+const provider = new firebase.auth.GoogleAuthProvider();
+provider.setCustomParameters({ promp: 'select_account' });
+
+export const signInWithGoogle = () => auth.signInWithPopup(provider)
+export default firebase 
 
 
