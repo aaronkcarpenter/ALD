@@ -12,7 +12,7 @@ body{
   margin: 0 auto;
 }
 
-.collection-control--w-filter{
+.collection-control--w-filter .collection-title{
   height: auto;
   min-height: 61px;
   flex-wrap: wrap;
