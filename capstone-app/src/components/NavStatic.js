@@ -1,8 +1,9 @@
 import React from 'react'
+import {auth } from '../firebase/firebase.utils';
 
 import '../styles/navStatic.css'
 
-const NavStatic = () => {
+const NavStatic = ({ currentUser }) => {
   return (
     <div className='container h-100'>
       <div className='d-flex justify-content-between align-items-center h-lg-100'>
@@ -37,6 +38,18 @@ const NavStatic = () => {
                 <input type='hidden' name='type' value='product' />
                 <button type='submit' className='btn-search' />
               </form>
+              {/* <li className='main-nav__item'>
+                <a href='/logout' className='main-nav__link toggle-submenu'>Log Out</a>
+              </li> */}
+              { currentUser ? (
+                <div className='main-nav__link option' onClick={() => auth.signOut()} >
+                  Log Out
+                </div>
+              ) : ( 
+                <a href='/' className='main-nav__link option'>
+                  Log In
+                </a>
+              )}
             </li>
           </ul>
           <ul>

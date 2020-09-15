@@ -7,7 +7,7 @@ class ShopAll extends Component {
       <div>
         <div className='shop-all-container'>
           <div className='shop-all__header collection-control collection-control--w-filter'>
-            <h1 className='collection-name'> Shop All
+            <h1 className='collection-name collection-title'> Shop All
             <sup>193</sup>
             </h1>
             <div className='toolbar-right'>
