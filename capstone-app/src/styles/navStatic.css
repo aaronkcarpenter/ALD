@@ -1,0 +1,283 @@
+body{
+  font-family: "Sohne",Arial,sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.41;
+  letter-spacing: 0.05em;
+  color: #181818;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.h-100{
+  height: 100% !important;
+}
+
+.container{
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.align-items-center{
+  align-items: center !important;
+}
+
+.justify-content-between{
+  justify-content: space-between !important;
+}
+
+.d-flex{
+  display: flex !important;
+}
+
+.nav{
+  left: 0;
+  z-index: 100;
+  transition: opacity 0.2s,visibility 0ms linear 0.2s,transform 0.5s ease;
+  font-family: "DIN W01 Regular",Arial,sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+}
+
+.nav-wrapper{
+  height: 100%;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.main-nav__item:first-child{
+  border-top: none;
+}
+
+.main-nav__link{
+  display: block;
+  position: relative;
+}
+
+a {
+  transition: all 0.4s linear;
+  text-decoration: none;
+  color: #181818;
+  cursor: pointer;
+}
+
+.search-form{
+  margin-bottom: 0 !important;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.form-group{
+  position: relative;
+}
+
+form{
+  margin-top: 0em;
+}
+
+button{
+  text-transform: none;
+  overflow: visible;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  font: 400 13.3333px Arial;
+}
+
+.search-form .form-control{
+  padding: 21px 60px 21px 20px;
+}
+
+.form-control{
+  text-transform: uppercase;
+  font-family: "DIN W01 Regular",Arial,sans-serif;
+  color: #181818;
+  letter-spacing: 0.1em;
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  background: none;
+  line-height: 1;
+}
+
+input{
+  overflow: visible;
+  margin: 0;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  font: 400 13.3333px Arial;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.btn-search{
+  position: absolute;
+  right: 20px;
+  background: url(//cdn.shopify.com/s/files/1/0302/7829/t/112/assets/ico-search.svg?v=1153052…);
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.main-nav__item.d-flex
+.main-nav__link:first-child{
+  border-right: 1px solid #e5e5e5;
+}
+
+.main-nav__item.d-flex
+.main-nav__link{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.main-nav__link{
+  display: block;
+  position: relative;
+}
+
+/* media queries  */
+@media only screen and (min-width: 1025px){
+  .container{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+  .h-lg-100{
+    height: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+  .nav{
+    top: 0;
+    position: relative;
+    font-size: 0.6875rem;
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    width: auto;
+    height: auto;
+    max-height: none;
+    min-height: 1px;
+    height: 100%;
+    overflow: visible;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+  .main-nav{
+    height: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+  .main-nav__item{
+    position: relative;
+    padding: 0 10px;
+    border: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+  .main-nav__link{
+    background: none;
+    padding: 0 0 1px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .form-group{
+    margin-bottom: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .search-close{
+    display: block;
+    background: url(//cdn.shopify.com/s/files/1/0302/7829/t/112/assets/ico-close.svg?v=1390220…);
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    z-index: 3;
+    border: none;
+    padding: 0;
+    right: 25px;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+  .search-form .form-control{
+    padding-left: 25px;
+    font-size: 0.6875rem;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+  .main-nav__item{
+    position: relative;
+    padding: 0 10px;
+    border: none;
+    height: 100%;
+    /* display: flex; */
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px){
+  .d-lg-none{
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1025px){
+  .main-nav__link{
+    background: none;
+    padding: 0 0 1px;
+  }
+}
