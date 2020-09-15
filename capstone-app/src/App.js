@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Navigation from './components/Navigation';
+import NavStatic from './components/NavStatic';
 import Footer from './components/Footer';
 import useAuth from './auth/UseAuth';
 import SignInForm from './auth/SignInForm';
@@ -16,7 +17,8 @@ function App() {
   const {isLoading, user } = useAuth();
   return (
     <BrowserRouter>
-      <Navigation />
+      {/* <Navigation /> */}
+      <NavStatic />
       <Switch>
         <Route exact path='/' component={SignInForm} />
         <Route path='/signup' />
