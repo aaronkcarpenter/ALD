@@ -2,7 +2,7 @@
 // import { useHistory } from 'react-router-dom';
 
 import signIn from './SignIn';
-import { signInWithGoogle } from '../firebase/firebase.utils';
+import { auth, signInWithGoogle } from '../firebase/firebase.utils';
 import '../styles/login.css';
 
 // import { signInWithGoogle } from '../index'
@@ -98,10 +98,17 @@ class SignInForm extends Component {
     }
   }
 
-  handleSubmit = event => {
+  handleSubmit = async event => {
     event.preventDefault();
 
-    this.setState({ email: '', password: ''})
+    const { email, password } = this.state;
+
+    try{
+      await auth.signInWithEmailAndPassword(email, password);
+      this.setState({ email: '', password: ''});
+    } catch (e) {
+      console.error(e);
+    }
   }
 
   handleChange = e => {
@@ -146,6 +153,7 @@ class SignInForm extends Component {
             <div className='form-button-area'>
               <button
                 className='button'
+                type='submit'
                 // disabled={!emailValue || !passwordValue}
                 // onClick={onSignInClicked}
               >Sign In
