@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Navigation from './components/Navigation';
 import NavStatic from './components/NavStatic';
+import SignUp from './components/SignUp';
 import Footer from './components/Footer';
 import useAuth from './auth/UseAuth';
 import SignInForm from './auth/SignInForm';
@@ -27,10 +28,22 @@ class App extends React.Component {
   unsubscribeFromAuth = null
 
   componentDidMount() {
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async user => {
-      createUserProfileDocument(user);
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+      if(userAuth){
+        const userRef = await createUserProfileDocument(userAuth);
 
-      // console.log(user);
+        userRef.onSnapshot(snapShot => {
+          this.setState({
+            currentUser: {
+              id: snapShot.id,
+              ...snapShot.data()
+            }
+          });
+          console.log(this.state);
+        });    
+      }
+
+      this.setState({ currentUser: userAuth });
     });
   };
 
@@ -44,7 +57,7 @@ class App extends React.Component {
         <NavStatic currentUser={this.state.currentUser} />
         <Switch>
           <Route exact path='/' component={SignInForm} />
-          <Route path='/signup' />
+          <Route path='/signup' component={SignUp} />
           <Route path='/subscribe' />
           {/* <Route path='/home' component={Home} /> */}
           <Route path='/logout' component={SignOutButton}/>
