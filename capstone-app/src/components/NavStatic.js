@@ -30,10 +30,10 @@ const NavStatic = ({ currentUser }) => {
         </a>
         <div className='navbar-wrapper d-lg-flex'>
           <ul className='navbar'>
-            <li className='main-nav__item'>
+            <li className='main-nav__item nav'>
               <a href='/search' className='main-nav__link toggle-submenu'>Search</a>
               <form action='/search' className='search-form form-group search-desktop'>
-                <button type='button' className='search-close' />
+                {/* <button type='submit' className='search-close' /> */}
                 <input type='text' className='form-control search-field' placeholder='search for' autoComplete='off' />
                 <input type='hidden' name='type' value='product' />
                 <button type='submit' className='btn-search' />
@@ -53,11 +53,11 @@ const NavStatic = ({ currentUser }) => {
             </li>
           </ul>
           <ul>
-            <li className='main-nav__item'>
+            <li className='main-nav__item nav'>
               <a href='profile/:id' className='main-nav__link toggle-submenu'>Account</a>
             </li>
             <li className='main-nav__item'>
-              <a href='/cart' className='main-nav__link toggle-submenu'>My Bag</a>
+              <a href='/cart' className='main-nav__link toggle-submenu my-bag nav '>My Bag</a>
             </li>
           </ul>
         </div>

@@ -18,28 +18,28 @@ const Footer = () => {
             </form>
           </li>
           <li className='footer-nav_item'>
-            <a href='https://google.com' className='footer-nav__link'>
-              Contact Us
+            <a href='https://github.com/aaronkcarpenter' target='_blank' className='footer-nav__link'>
+              Github
             </a>
           </li>
           <li className='footer-nav_item'>
-            <a href='https://google.com' className='footer-nav__link'>
-              Shipping and Policies
+            <a href='https://aaronkcarpenter.com' target='_blank' className='footer-nav__link'>
+              Portfolio
             </a>
           </li>
           <li className='footer-nav_item'>
-            <a href='https://google.com' className='footer-nav__link'>
-              FAQ
+            <a href='https://angel.co/u/aaron-carpenter-4' target='_blank' className='footer-nav__link'>
+              AngelList
             </a>
           </li>
           <li className='footer-nav_item'>
-            <a href='https://google.com' className='footer-nav__link'>
-              Instagram
+            <a href='https://google.com' target='_blank' className='footer-nav__link'>
+              Resume
             </a>
           </li>
           <li className='footer-nav_item'>
-            <a href='https://google.com' className='footer-nav__link'>
-              Contact Me
+            <a href='https://linkedin.com/in/aaronkcarpenter' target='_blank' className='footer-nav__link'>
+              LinkedIn
             </a>
           </li>
         </ul>
