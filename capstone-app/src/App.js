@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Navigation from './components/Navigation';
 import NavStatic from './components/NavStatic';
 import SignUp from './components/SignUp';
+import Checkout from './auth/Checkout'
 import Footer from './components/Footer';
 import useAuth from './auth/UseAuth';
 import SignInForm from './auth/SignInForm';
@@ -72,7 +72,7 @@ class App extends React.Component {
           <Route exact path='prior/collections/:id' />
           <Route exact path='/shop/:id' component={ProductPage} />
           <Route exact path='/lookbook/:id' />
-          <Route path='/checkout' />
+          <Route path='/checkout' component={Checkout} />
           {/* <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/home' component={Home} />
           <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/shop-all' component={ShopAll} />
           <ProtectedRoute isAuthed={!!user} isLoading={isLoading} exact path='/profile/:id' />
