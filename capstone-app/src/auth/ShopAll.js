@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
 import '../styles/ShopAll.css'
+import shop_all from '../test/testData';
 
 class ShopAll extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       collection: shop_all
+    }
+  }
+  
   render() {
     return (
       <div>

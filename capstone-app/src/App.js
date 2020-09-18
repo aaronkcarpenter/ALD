@@ -3,7 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import NavStatic from './components/NavStatic';
 import SignUp from './components/SignUp';
-import Checkout from './auth/Checkout'
+import Checkout from './auth/Checkout';
+import Checkout_Modal from './auth/Checkout_Modal';
 import Footer from './components/Footer';
 import useAuth from './auth/UseAuth';
 import SignInForm from './auth/SignInForm';
