@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import CheckoutModal from './Checkout_Modal';
 import '../styles/checkout.css'
 
 class Checkout extends Component {
@@ -6,14 +7,27 @@ class Checkout extends Component {
     super(props)
   
     this.state = {
-       cart_items: ''
+      show: false,
+      cart_items: ''
     }
+  }
+
+  showModal = () => {
+    this.setState({
+      show: true
+    });
+  }
+
+  hideModal = () => {
+    this.setState({
+      show: false
+    })
   }
   
   render() {
     return (
       <div className='section'>
-        <form className='cart' action='/cart'>
+        <form className='cart' action='/checkout'>
           <div className='title'>
             <h1>
               My Bag
@@ -86,7 +100,23 @@ class Checkout extends Component {
               <button type='submit' name='update' className='btn btn--light'>
                 Update Cart
               </button>
-              <button type='submit' name='checkout' className='btn btn--dark ckout'>
+              <CheckoutModal show={this.state.show} handleClose={this.hideModal}>
+                <h1 className='modal-h1'>CLONE ALERT</h1>
+                <p className='modal-pari'>This is a clone, so the products in your cart can't be purchased from us. Instead, feel free
+                to browse the same products at 
+                  <a href='https://www.aimeleondore.com/'> Aime Leon Dore</a>
+                  . For my resume, portfolio, and contact information, click the links below. Thanks for browsing.
+                </p>
+                <a href='https://github.com/aaronkcarpenter'>
+                  <i className='fab fa-camera-facebook' />
+                </a>
+              </CheckoutModal>
+              <button 
+              type='button' 
+              name='checkout' 
+              className='btn btn--dark ckout'
+              onClick={this.showModal}
+              >
                 Check Out
               </button>
             </div>

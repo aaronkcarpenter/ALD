@@ -6,3 +6,20 @@ const inventory_items = [{
   photo_url: 'google.com',
   created_at: Date.now()
 }]
+
+// export default shop_all = {
+//   {
+//     id: 1,
+//     title: 'Shop All',
+//     routeName: 'shop-all',
+//     items: [
+//       {
+//         id: 1,
+//         imageUrl:
+//         product_name:
+//         cost:
+//         number_available:
+//       }
+//     ]
+//   }
+// }
