@@ -100,16 +100,37 @@ class Checkout extends Component {
               <button type='submit' name='update' className='btn btn--light'>
                 Update Cart
               </button>
-              <CheckoutModal show={this.state.show} handleClose={this.hideModal}>
-                <h1 className='modal-h1'>CLONE ALERT</h1>
-                <p className='modal-pari'>This is a clone, so the products in your cart can't be purchased from us. Instead, feel free
-                to browse the same products at 
-                  <a href='https://www.aimeleondore.com/'> Aime Leon Dore</a>
-                  . For my resume, portfolio, and contact information, click the links below. Thanks for browsing.
-                </p>
-                <a href='https://github.com/aaronkcarpenter'>
-                  <i className='fab fa-camera-facebook' />
-                </a>
+              <CheckoutModal className='modal-container' show={this.state.show} handleClose={this.hideModal}>
+                <div className='header-container'>
+                  <h1 className='modal-h1'>CLONE ALERT</h1>
+                </div>
+                <div className='paragraph-header'>
+                  <p className='modal-pari'>This is a clone, so the products in your cart can't be purchased from us. Instead, feel free
+                  to browse the same products at 
+                    <a href='https://www.aimeleondore.com/'> Aime Leon Dore</a>
+                    . For my resume, portfolio, and contact information, click the links below. Thanks for browsing.
+                  </p>
+                </div>
+                <div className='links-container'>
+                  <a href='https://github.com/aaronkcarpenter'>
+                    <i className='fab fa-github fa-7x' /> 
+                    <p className='profile-link'>Github</p>
+                  </a>
+                  <a href='https://linkedin.com/in/aaronkcarpenter'>
+                    <i className='fab fa-linkedin-in fa-7x' />
+                    <p className='profile-link'>LinkedIn</p>
+                  </a>
+                  <a href='https://angel.co/u/aaron-carpenter-4'>
+                    <i className='fab fa-angellist fa-7x' /> 
+                    <p className='profile-link'>AngelList</p>
+                  </a>
+                </div>
+                <div>
+                  <a href='mailto:aaronkcarpenter@gmail.com'>
+                    <i className='fab fa-envelope fa-7x' /> 
+                    <p className='profile-link'>Email Me</p>
+                  </a>
+                </div>
               </CheckoutModal>
               <button 
               type='button' 
