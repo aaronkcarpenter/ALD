@@ -67,11 +67,19 @@ ul{
   position: relative;
 }
 
+.my-bag{
+  margin-top: -20px;
+}
+
 a {
   transition: all 0.4s linear;
   text-decoration: none;
   color: #181818;
   cursor: pointer;
+}
+
+.site-name{
+  padding-left: 170px;
 }
 
 .search-form{
@@ -153,6 +161,7 @@ input{
   padding: 0;
   border: none;
   background-repeat: no-repeat;
+  margin-top: 44px;
 }
 
 .main-nav__item.d-flex
@@ -240,7 +249,7 @@ input{
 @media only screen and (min-width: 768px){
   .search-close{
     display: block;
-    background: url(//cdn.shopify.com/s/files/1/0302/7829/t/112/assets/ico-close.svg?v=1390220…);
+    /* background: url(//cdn.shopify.com/s/files/1/0302/7829/t/112/assets/ico-close.svg?v=1390220…); */
     background-size: 14px 14px;
     width: 14px;
     height: 14px;

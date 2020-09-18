@@ -12,17 +12,23 @@ body{
   padding-top: 300px;
 }
 
-.login-form{
-
+.title h1{
+  font-family: "Financier Display",serif;
+  font-weight: 500;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 1.5rem;
+  /* font-size: 200rem; */
+  line-height: 1;
 }
 
 .page-header{
-  font-family: "Financier Display",serif;
+  /* font-family: "Financier Display",serif;
   font-weight: 700;
   letter-spacing: normal;
   margin: 0;
   font-size: 1.5rem;
-  line-height: 1;
+  line-height: 1; */
   padding-bottom: 20px;
 }
 
