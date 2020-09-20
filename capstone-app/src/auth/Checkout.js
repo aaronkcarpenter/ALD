@@ -108,7 +108,7 @@ class Checkout extends Component {
                   <p className='modal-pari'>This is a clone, so the products in your cart can't be purchased from us. Instead, feel free
                   to browse the same products at 
                     <a href='https://www.aimeleondore.com/'> Aime Leon Dore</a>
-                    . For my resume, portfolio, and contact information, click the links below. Thanks for browsing.
+                    . For my resumé, portfolio, and contact information, click the links below. Thanks for browsing.
                   </p>
                 </div>
                 <div className='links-container'>
@@ -124,11 +124,17 @@ class Checkout extends Component {
                     <i className='fab fa-angellist fa-7x' /> 
                     <p className='profile-link'>AngelList</p>
                   </a>
+                  <a href='https://drive.google.com/file/d/16iFr5Lm5A0wd0E9YwMRcWvwwZPIf99BM/view?usp=sharing'>
+                    <i className='fab fas fa-newspaper fa-7x' /> 
+                    <p className='profile-link resume'>Resumé</p>
+                  </a>
                 </div>
                 <div>
                   <a href='mailto:aaronkcarpenter@gmail.com'>
-                    <i className='fab fa-envelope fa-7x' /> 
-                    <p className='profile-link'>Email Me</p>
+                    <p className='profile-link email-contact'> 
+                    <i className='fas fa-envelope fa-2x' />
+                      Email Me
+                    </p>
                   </a>
                 </div>
               </CheckoutModal>
