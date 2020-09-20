@@ -50,6 +50,7 @@
   font-size: 30px;
   text-align: center;
   text-decoration: underline;
+  margin-top: 10px;
 }
 
 .modal-pari{
@@ -60,6 +61,7 @@
 
 .modal-button{
   margin-bottom: 30px;
+  margin-top: -20px;
 }
 
 .links-container{
@@ -79,6 +81,15 @@
   margin-right: 30px;
   text-align: center;
 }
+
+.email-contact{
+  font-size: 30px;
+  text-align: center;
+}
+
+/* .resume{
+  margin-left: 30px;
+} */
 
 .fab:hover{
   color: red;
