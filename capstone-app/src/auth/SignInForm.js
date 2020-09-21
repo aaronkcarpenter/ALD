@@ -1,5 +1,6 @@
 // import React, { useState } from 'react';
 // import { useHistory } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 import signIn from './SignIn';
 import { auth, signInWithGoogle } from '../firebase/firebase.utils';
@@ -98,10 +99,6 @@ class SignInForm extends Component {
     }
   }
 
-  // routeChange = () => {
-  //   const path = 
-  // }
-
   handleSubmit = async event => {
     event.preventDefault();
 
@@ -126,7 +123,7 @@ class SignInForm extends Component {
       <div className='form-container'>
         <div className='login-form'>
           {/* <form method='post' action='/home' className='customer-login'> */}
-          <form onSubmit={this.handleSubmit} className='customer-login' action='/home'>
+          <form onSubmit={this.handleSubmit} className='customer-login' action='/shop-all'>
             <div className='title'>
               <h1 className='page-header'>Login</h1>
             </div>
@@ -135,6 +132,7 @@ class SignInForm extends Component {
                 <input
                   className='email-input'
                   name='email'
+                  type='email'
                   value={this.state.email}
                   placeholder='Email'
                   required
@@ -150,16 +148,18 @@ class SignInForm extends Component {
                   required
                   onChange={this.handleChange} />
                 <label className='forgotten-password'>
-                  <a className='forgotten-password-link' href='/recover'>Forgot your password?</a>
+                  <a className='forgotten-password-link' href='/signup'>Forgot your password?</a>
                 </label>
               </div>
             </div>
             <div className='form-button-area'>
               <button
                 className='button'
+                type='submit'
                 // disabled={!emailValue || !passwordValue}
                 // onClick={onSignInClicked}
               >Sign In
+                {/* <a className='button' href='/shop-all'> Sign In </a> */}
               </button>
             </div>
             <div className='form-button-area'>
