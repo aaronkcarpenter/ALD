@@ -332,10 +332,17 @@ input[type='hidden' i]{
   padding: 13.33333px 20px 13.33333px 0;
   position: relative;
   border-bottom: 1px solid #181818;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .panel__content{
   padding: 9.09091px 0 0;
+  margin-top: -33px;
+}
+
+.size, .color{
+  font-weight: bold;
 }
 
 ul{
@@ -353,7 +360,11 @@ ul{
 li{
   display: list-item;
   text-align: -webkit-match-parent;
+  /* font-size: 0.875rem; */
+  font-size: 12px;
+  font-family: "Sohne",Arial,sans-serif;
 }
+
 
 .checkout-link{
   color: white;

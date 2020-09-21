@@ -47,11 +47,11 @@ class Checkout extends Component {
               <tr className='cart-item'>
                 <td className='car-item__desc'>
                   <div className='d-flex'>
-                    <a href='https://www.aimeleondore.com/collections/all/products/ls-waffle-tee-1?variant=31782577897569' className='cart__image'>
+                    <a href='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Ftops-1-13_7ee0f84d-4285-48a3-b577-674a523bb523_800x.jpg?alt=media&token=fa279cb2-01cc-4a38-9b03-2d29bb2fe7b7' className='cart__image' target='_blank'>
                       <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/tops9-13_x100.jpg?v=1598194475' alt='waffle thermal' />
                     </a>
                     <div className='cart-extra-desc'>
-                      <a href='https://www.aimeleondore.com/products/ls-waffle-tee-1?variant=31782577897569' className='cart-item__name'>
+                      <a href='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Ftops-1-13_7ee0f84d-4285-48a3-b577-674a523bb523_800x.jpg?alt=media&token=fa279cb2-01cc-4a38-9b03-2d29bb2fe7b7' className='cart-item__name'>
                         Waffle Thermal
                       </a>
                       <div className='extra-desc'>
@@ -85,15 +85,15 @@ class Checkout extends Component {
               <span className='cart-subtotal__price'>$400.23</span>
             </div>
             <div className='cart-footer__item'>
-              <span>SHIPPING</span>
+              <span>Shipping</span>
               <span>FREE SHIPPING ON ORDERS OVER $300</span>
             </div>
             <div className='cart-footer__item'>
               <span>
-                <a href='shop-all'>TERMS AND CONDITIONS</a>
+                <a href='shop-all'>Terms and Conditions</a>
               </span>
               <span>
-                {/* <input type='checkbox'>::after</input> */}
+                <input className='checkbox' type='checkbox'></input>
               </span>
             </div>
             <div className='cart-buttons'>
