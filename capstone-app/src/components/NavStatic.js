@@ -11,16 +11,16 @@ const NavStatic = ({ currentUser }) => {
           <div className='nav-wrapper'>
             <ul className='main-nav'>
               <li className='main-nav__item'>
-                <a href='/shop-all' className='main-nav__link toggle-submenu'>Shop</a>
+                <a href='/shop-all' className='main-nav__link toggle-submenu nav'>Shop</a>
               </li>
               <li className='main-nav__item'>
-                <a href='/collections' className='main-nav__link toggle-submenu'>Collections</a>
+                <a href='/collections' className='main-nav__link toggle-submenu nav'>Collections</a>
               </li>
               <li className='main-nav__item'>
-                <a href='/archive' className='main-nav__link toggle-submenu'>Archive</a>
+                <a href='/archive' className='main-nav__link toggle-submenu nav'>Archive</a>
               </li>
               <li className='main-nav__item'>
-                <a href='/brand' className='main-nav__link toggle-submenu'>Brand</a>
+                <a href='/brand' className='main-nav__link toggle-submenu nav'>Brand</a>
               </li>
             </ul>
           </div>

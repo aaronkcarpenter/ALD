@@ -49,7 +49,7 @@ const ProductPage = () => {
             </div>
           </div>
           <div className='product__variants product__variants--colors'>
-            <div className='product-variants-title'>
+            <div className='product-variants-title color'>
               Select Color
               <span className='product__variants-count d-lg-none'>(6)</span>
             </div>
@@ -94,8 +94,7 @@ const ProductPage = () => {
               <input type='hidden' name='id' value='1' />
               <div className='product__variants'>
                 <div className='product__variants-title'>
-                  <span className='text-noerror'>Select Size</span>
-                  <span className='text-error'>Please Select Your Size</span>
+                  <span className='text-noerror size'>Select Size</span>
                 </div>
                 <div className='swatch-size grid-row grid-row--3 grid-row--lg-6'>
                   <div className='swatch-size__item'>
@@ -138,12 +137,12 @@ const ProductPage = () => {
                 <ul>
                   <li>
                     <div>Black</div> 
-                    <div>Black</div> 
-                    <div>Black</div> 
-                    <div>Black</div> 
-                    <div>Black</div> 
-                    <div>Black</div> 
-                    <div>Black</div> 
+                    <div>Embroidered logo on left chest</div> 
+                    <div>Kanga pocket</div> 
+                    <div>Rib knit cuffs & waistband</div> 
+                    <div>100% Cotton</div> 
+                    <div>Machine wash</div> 
+                    <div>Made in Canada</div> 
                   </li>
                 </ul>
               </div>

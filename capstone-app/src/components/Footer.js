@@ -13,7 +13,7 @@ const Footer = () => {
               <div className='form-group'>
                 <input className='form-control' type='email' name='email'
                 placeholder='Your Email' />
-                <input type='submit' value='SUBMIT' className='submit-button' />
+                <input to='/shop-all' type='submit' value='SUBMIT' className='submit-button' />
               </div>
             </form>
           </li>
@@ -34,7 +34,7 @@ const Footer = () => {
           </li>
           <li className='footer-nav_item'>
             <a href='https://google.com' target='_blank' className='footer-nav__link'>
-              Resume
+              Resumé
             </a>
           </li>
           <li className='footer-nav_item'>
