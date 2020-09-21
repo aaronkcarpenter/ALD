@@ -124,7 +124,9 @@ const ProductPage = () => {
                   </div>
                 </div>
                 <div className='atc-box'>
-                  <button type='submit' className='btn btn--dark btn--bag'>Add To Bag</button>
+                  <button type='submit' className='btn btn--dark btn--bag'>
+                    <a className='checkout-link' href='/checkout'> Add to Bag </a>
+                  </button>
                 </div>
               </div>
             </form>

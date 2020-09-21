@@ -12,13 +12,12 @@ body{
   padding-top: 300px;
 }
 
-.title h1{
+.title > .page-header{
   font-family: "Financier Display",serif;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: normal;
   margin: 0;
   font-size: 1.5rem;
-  /* font-size: 200rem; */
   line-height: 1;
 }
 
