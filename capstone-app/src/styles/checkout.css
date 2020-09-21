@@ -17,7 +17,8 @@ div{
 }
 
 .section{
-  padding-top:25px;
+  /* padding-top:25px; */
+  padding: 25px 20px 0 20px;
 }
 
 .form{
@@ -98,6 +99,7 @@ tbody{
   display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
+  font-size: 12px;
 }
 
 .cart-item td{
@@ -176,7 +178,8 @@ label{
   height: 35px;
   text-align: center;
   border: 1px solid #181818;
-  margin-left: 5px;
+  margin-left: 15px;
+
 }
 
 .form-control, .cart-quantity{
@@ -190,7 +193,8 @@ label{
   border: none;
   padding: 11.76471px 0;
   /* width: 100%; */
-  width: 50%;
+  border: 1px solid black;
+  width: 5%;
   background: none;
   line-height: 1;
 }
@@ -200,7 +204,7 @@ button, input{
 }
 
 .cart-item td:not(:first-child){
-  text-align: right;
+  text-align: center;
 }
 
 .cart-item td{
@@ -212,6 +216,7 @@ button, input{
   margin-bottom: 56px;
   letter-spacing: 0.1em;
   font-weight: normal;
+  font-size: 12px;
 }
 
 .cart-footer__item{
@@ -275,6 +280,16 @@ button{
 .btn--dark{
   background-color: #181818;
   color: #fff;
+}
+
+.checkbox{
+  outline: 0 none;
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+  position: relative;
+  border: 1px solid #181818;
+  margin-right: 10px;
 }
 /* media queries  */
 @media only screen and (min-width: 768px){
