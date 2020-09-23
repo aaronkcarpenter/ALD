@@ -33,7 +33,7 @@ const Footer = () => {
             </a>
           </li>
           <li className='footer-nav_item'>
-            <a href='https://google.com' target='_blank' className='footer-nav__link'>
+            <a href='https://drive.google.com/file/d/16iFr5Lm5A0wd0E9YwMRcWvwwZPIf99BM/view?usp=sharing' target='_blank' className='footer-nav__link'>
               Resumé
             </a>
           </li>

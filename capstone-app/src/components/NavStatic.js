@@ -29,13 +29,13 @@ const NavStatic = ({ currentUser }) => {
                 <a href='/shop-all' className='main-nav__link toggle-submenu nav'>Shop</a>
               </li>
               <li className='main-nav__item'>
-                <a href='/collections' className='main-nav__link toggle-submenu nav'>Collections</a>
+                <a href='/shop-all' className='main-nav__link toggle-submenu nav'>Collections</a>
               </li>
               <li className='main-nav__item'>
-                <a href='/archive' className='main-nav__link toggle-submenu nav'>Archive</a>
+                <a href='/shop-all' className='main-nav__link toggle-submenu nav'>Archive</a>
               </li>
               <li className='main-nav__item'>
-                <a href='/brand' className='main-nav__link toggle-submenu nav'>Brand</a>
+                <a href='/shop-all' className='main-nav__link toggle-submenu nav'>Brand</a>
               </li>
             </ul>
           </div>
