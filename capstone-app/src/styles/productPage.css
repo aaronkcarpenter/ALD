@@ -262,9 +262,14 @@ input[type='hidden' i]{
   width: 0;
 }
 
-[type='radio']{
+input[type='radio']{
   box-sizing: border-box;
   padding: 0;
+}
+
+input[type='radio']:focus{
+  background-color: black;
+  color: white;
 }
 
 .swatch-size__label{
