@@ -1,9 +1,24 @@
 import React from 'react'
 import {auth } from '../firebase/firebase.utils';
+import { useHistory } from 'react-router-dom';
+
 
 import '../styles/navStatic.css'
 
 const NavStatic = ({ currentUser }) => {
+
+  const history = useHistory();
+
+  const redirectNav = async (event) => {
+    event.preventDefault();
+    try {
+      auth.signOut();
+      history.push('/');
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  
   return (
     <div className='container h-100'>
       <div className='d-flex justify-content-between align-items-center h-lg-100'>
@@ -42,7 +57,8 @@ const NavStatic = ({ currentUser }) => {
                 <a href='/logout' className='main-nav__link toggle-submenu'>Log Out</a>
               </li> */}
               { currentUser ? (
-                <div className='main-nav__link option' onClick={() => auth.signOut()} >
+                // <div className='main-nav__link option' onClick={() => auth.signOut()} >
+                <div className='main-nav__link option' onClick={redirectNav} >
                   Log Out
                 </div>
               ) : ( 

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import NavStatic from './components/NavStatic';
-import SignUp from './components/SignUp';
+import SignUpFormFinal from './components/SignUp';
 import Checkout from './auth/Checkout';
 import Checkout_Modal from './auth/Checkout_Modal';
 import Footer from './components/Footer';
@@ -14,6 +14,7 @@ import ProductPage from './auth/ProductPage';
 import ProtectedRoute from './auth/ProtectedRoute'
 import Home from './components/Home'
 import { auth,  createUserProfileDocument } from './firebase/firebase.utils';
+import SignInFormFinal from './auth/SignInFormFinal';
 
 // const {isLoading, user } = useAuth();
 
@@ -57,8 +58,9 @@ class App extends React.Component {
       <BrowserRouter>
         <NavStatic currentUser={this.state.currentUser} />
         <Switch>
-          <Route exact path='/' component={SignInForm} />
-          <Route path='/signup' component={SignUp} />
+          <Route exact path='/' component={SignInFormFinal} />
+          {/* <Route path='/signup' component={SignUp} /> */}
+          <Route path='/signup' component={SignUpFormFinal} />
           <Route path='/subscribe' />
           {/* <Route path='/home' component={Home} /> */}
           <Route path='/logout' component={SignOutButton}/>

@@ -1,6 +1,5 @@
 // import React, { useState } from 'react';
 // import { useHistory } from 'react-router-dom';
-import { Redirect } from 'react-router-dom';
 
 import signIn from './SignIn';
 import { auth, signInWithGoogle } from '../firebase/firebase.utils';
@@ -36,7 +35,6 @@ import '../styles/login.css';
 //   return (
 //     <div className='form-container'>
 //         <div className='login-form'>
-//           {/* <form method='post' action='/home' className='customer-login'> */}
 //           <form className='customer-login' action='/home'>
 //             <div className='title'>
 //               <h1 className='page-header'>Login</h1>
