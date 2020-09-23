@@ -1,6 +1,8 @@
 # Aimé Leon Dore
 Aimé Leon Dore was created and inspired by AimeLeonDore.com. This site specializes
-in sales of high-end fashion products at mid-range prices. 
+in sales of high-end fashion products at mid-range prices.
+
+# Live: https://app-academy-capstone-project.web.app/
 
 ## Technologies
 * Backend: Firebase, Cloud Firestore, Firebase Storage
