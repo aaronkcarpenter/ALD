@@ -27,6 +27,15 @@ export const SignInFormFinal = () => {
     }
   }
 
+  const handleCreate = async (e) => {
+    e.preventDefault();
+    try{
+      history.push('/signup');
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
   // Not in Use 
   // const onSignInWithGoogleClicked = async () => {
   //   await signInWithGoogle();
@@ -95,7 +104,8 @@ export const SignInFormFinal = () => {
                 className='button'
                 disabled={!email || !password}
               // onClick={this.routeChange}
-              >Create Account
+                onClick={handleCreate}
+              > Create Account
               </button>
             </div>
           </form>

@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 
 import '../styles/navStatic.css'
+import cartDropdown from './CartDropdown';
 
 const NavStatic = ({ currentUser }) => {
 
@@ -73,7 +74,8 @@ const NavStatic = ({ currentUser }) => {
               <a href='profile/:id' className='main-nav__link toggle-submenu'>Account</a>
             </li>
             <li className='main-nav__item'>
-              <a href='/cart' className='main-nav__link toggle-submenu my-bag nav '>My Bag</a>
+              <a href='/checkout' className='main-nav__link toggle-submenu my-bag nav '>My Bag</a>
+              <cartDropdown />
             </li>
           </ul>
         </div>

@@ -33,7 +33,7 @@ export const SignUpFormFinal = () => {
       setEmailValue('');
       setPasswordValue('');
       setConfirmPasswordValue('');
-      history.push('shop-all');
+      history.push('/shop-all');
     } catch (error) {
       console.error(error);
     }

@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import * as firebase from 'firebase/app';
 import 'firebase/analytics';
 import 'firebase/auth';
 import 'firebase/firestore';
 import './index.css';
 import App from './App';
+import store from './redux/store';
 
   // const firebaseConfig = {
   //   apiKey: "AIzaSyCGtpXvKcsOpfhF_sRrhB4dQhoaKio89ds",
@@ -31,9 +33,11 @@ import App from './App';
   // export default firebase 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
