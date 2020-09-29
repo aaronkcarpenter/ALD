@@ -1,4 +1,6 @@
 import React from 'react'
+import { connect } from 'react-redux';
+import { addItem } from '../redux/cart/cart.actions';
 
 import '../styles/productPage.css'
 
@@ -154,5 +156,9 @@ const ProductPage = () => {
     </div>
   )
 }
+
+const mapDispatchToProps = dispatch => ({
+  addItem: item => dispatch(addItem(item))
+})
 
 export default ProductPage

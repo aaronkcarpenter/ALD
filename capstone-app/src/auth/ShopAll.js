@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import '../styles/ShopAll.css'
-import shop_all from '../test/testData';
+import shop_all from '../test/shopAllData';
+
 
 class ShopAll extends Component {
   constructor(props) {
     super(props)
   
+    // collection is the array of items that displays on the page
     this.state = {
-       collection: shop_all
+       collections: shop_all
     }
   }
   
@@ -47,6 +49,16 @@ class ShopAll extends Component {
               
             </div>
           </div>
+
+          {/* <div className='items-preview'>
+            { items.map(item => (
+              <div key={item.id}>{item.name}</div>
+            ))}
+          </div> */}
+
+
+
+
           <div className='clothing-container'>
             <div className='products-collection grid-products grid-products--three'>
               <a href='/shop/1' className='product-pic'>
