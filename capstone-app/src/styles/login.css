@@ -5,11 +5,54 @@ body{
   font-family: "Sohne",Arial,sans-serif;
 }
 
+.page-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-side-container{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border-right: #e5e5e5 1px solid;
+  height: 100%;
+  width: 50%;
+}
+
+.image-container{
+  /* padding: 60px 0 0 60px; */
+  /* padding: 60px 260px 0 0; */
+  /* margin-left: -160px; */
+  display: flex;
+  justify-content: center;;
+}
+
+.disclaimer{
+  text-align: center;
+  font-size: 11px;
+  padding-top: 50px;
+  width: 50%;
+  margin-left: 250px;
+
+}
+
+.login-image{
+  height: 85vh;
+  /* align-self: flex-start; */
+  display: flex;
+  margin-top: 90px;
+}
+
 .form-container{
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 300px;
+  /* padding-top: 300px; */
+  /* margin-left: -200px; */
+  /* padding-left: 355px; */
+  width: 50%;
 }
 
 .title > .page-header{
@@ -19,6 +62,7 @@ body{
   margin: 0;
   font-size: 1.5rem;
   line-height: 1;
+  margin-left: 250px;
 }
 
 .page-header{
@@ -39,7 +83,7 @@ body{
   font-family: "DIN W01 Regular",Arial,sans-serif;
   color: #181818;
   letter-spacing: 0.1em;
-  width: 100%;
+  width: 50%;
   background: none;
   line-height: 1;
   border-radius: 0;
@@ -49,6 +93,7 @@ body{
   text-indent: 0px;
   cursor: text;
   font: 400 13.3333px Arial;
+  margin-left: 250px;
 
 }
 
@@ -60,7 +105,7 @@ body{
   font-family: "DIN W01 Regular",Arial,sans-serif;
   color: #181818;
   letter-spacing: 0.1em;
-  width: 100%;
+  width: 50%;
   background: none;
   line-height: 1;
   border-radius: 0;
@@ -70,6 +115,7 @@ body{
   text-indent: 0px;
   cursor: text;
   font: 400 13.3333px Arial;
+  margin-left: 250px;
 }
 
 .forgotten-password-link{
@@ -78,6 +124,9 @@ body{
   color: #181818;
   text-align: right;
   font-size: 12px;
+  display: flex;
+  margin-left: 250px;
+  margin-top: 10px;
 }
 
 .button{
@@ -106,4 +155,11 @@ body{
   background-color: white;
   color: black;
   border: 1px solid black;
+}
+
+@media only screen and (min-width: 1025px){
+  .left-side-container{
+    padding-left:25px;
+    padding-right: 25px;
+  }
 }

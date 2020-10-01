@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/cartDropdown.css';
 
-const cartDropdown = () => {
+const CartDropdown = () => {
   return (
     <div className='cart-dropdown'>
       <div className='cart-items' />
@@ -9,4 +9,4 @@ const cartDropdown = () => {
   )
 }
 
-export default cartDropdown;
+export default CartDropdown;

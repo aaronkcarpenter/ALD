@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 
 import '../styles/navStatic.css'
-// import cartDropdown from './CartDropdown';
+import CartDropdown from './CartDropdown';
 
 const shopping = [
   'https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2FAimeLeonDore5f5793d73410e25f5793d734277.365138215f5793d734277_800x.jpg?alt=media&token=158f3495-8f5c-4579-b712-806c0e24b24d',
@@ -101,7 +101,7 @@ const NavStatic = ({ currentUser }) => {
             </li>
             <li className='main-nav__item'>
               <a href='/checkout' className='main-nav__link toggle-submenu my-bag nav '>My Bag</a>
-              <cartDropdown />
+              <CartDropdown />
             </li>
           </ul>
         </div>

@@ -51,64 +51,77 @@ export const SignInFormFinal = () => {
   // }
 
     return (
-      <div className='form-container'>
-        <div className='login-form'>
-          <form onSubmit={handleSubmit} className='customer-login' action='/shop-all'>
-            <div className='title'>
-              <h1 className='page-header'>Login</h1>
-            </div>
-            <div className='email-and-password'>
-              <div className='email'>
-                <input
-                  className='email-input'
-                  name='email'
-                  type='email'
-                  value={email}
-                  placeholder='Email'
-                  required
-                  onChange={( e => setEmailValue(e.target.value))} />
+      <div className='page-container'>
+        <div className='left-side-container'>
+          <div className='image-container'>
+            <img className='login-image' src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/login%2FcropLogin.png?alt=media&token=79e23924-0f00-46d7-98e8-a4132ad5e0d6' alt='store' />
+          </div>
+        </div>
+        <div className='form-container'>
+          <div className='login-form'>
+            <form onSubmit={handleSubmit} className='customer-login' action='/shop-all'>
+              <div className='title'>
+                <h1 className='page-header'>Login</h1>
               </div>
-              <div className='password'>
-                <input
-                  className='password-input'
-                  name='password'
-                  type='password'
-                  value={password}
-                  placeholder='Enter Password'
-                  required
-                  onChange={(e => setPasswordValue(e.target.value))} />
-                <label className='forgotten-password'>
-                  <a className='forgotten-password-link' href='/signup'>Forgot your password?</a>
-                </label>
+              <div className='email-and-password'>
+                <div className='email'>
+                  <input
+                    className='email-input'
+                    name='email'
+                    type='email'
+                    value={email}
+                    placeholder='Enter Email'
+                    required
+                    onChange={( e => setEmailValue(e.target.value))} />
+                </div>
+                <div className='password'>
+                  <input
+                    className='password-input'
+                    name='password'
+                    type='password'
+                    value={password}
+                    placeholder='Enter Password'
+                    required
+                    onChange={(e => setPasswordValue(e.target.value))} />
+                  <label className='forgotten-password'>
+                    <a className='forgotten-password-link' href='/signup'>Forgot your password?</a>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div className='form-button-area'>
-              <button
-                className='button'
-                type='submit'
-                disabled={!email || !password}
-                onClick={handleSubmit}
-              >Sign In
-              </button>
-            </div>
-            <div className='form-button-area'>
-              <button
-                className='button'
-                // disabled={!email || !password}
-                onClick={signInWithGoogle}
-              >Sign In With Google
-              </button>
-            </div>
-            <div className='form-button-area'>
-              <button
-                className='button'
-                disabled={!email || !password}
-              // onClick={this.routeChange}
-                onClick={handleCreate}
-              > Create Account
-              </button>
-            </div>
-          </form>
+              <div className='form-button-area'>
+                <button
+                  className='button'
+                  type='submit'
+                  disabled={!email || !password}
+                  onClick={handleSubmit}
+                >Sign In
+                </button>
+              </div>
+              <div className='form-button-area'>
+                <button
+                  className='button'
+                  // disabled={!email || !password}
+                  onClick={signInWithGoogle}
+                >Sign In With Google
+                </button>
+              </div>
+              <div className='form-button-area'>
+                <button
+                  className='button'
+                  disabled={!email || !password}
+                // onClick={this.routeChange}
+                  onClick={handleCreate}
+                > Create Account
+                </button>
+              </div>
+              <div className='text-container title'>
+                <p className='disclaimer'>
+                  *To ensure optimal experience for visitors, you are required
+                  to log in. Don't worry, it's worth it. If you're a recruiter,
+                  simply click the 'Sign In' button above. Welcome & Enjoy!*</p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     )
