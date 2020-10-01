@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import '../styles/ShopAll.css'
 import shop_all from '../test/shopAllData';
 
+import CollectionPreview from './CollectionPreview';
+
 
 class ShopAll extends Component {
   constructor(props) {
@@ -14,12 +16,13 @@ class ShopAll extends Component {
   }
   
   render() {
+    const { collections } = this.state;
     return (
       <div>
         <div className='shop-all-container'>
           <div className='shop-all__header collection-control collection-control--w-filter'>
               <h1 className='collection-name collection-title'> Shop All
-              <sup>193</sup>
+              <sup>15</sup>
               </h1>
             <div className='shop-all-header-container'>
               <div className='toolbar-right'>
@@ -46,14 +49,16 @@ class ShopAll extends Component {
                   <span className='filter-toggle__remove-all'></span>
                 </div>
               </a>
-              
+
             </div>
           </div>
 
           {/* <div className='items-preview'>
-            { items.map(item => (
-              <div key={item.id}>{item.name}</div>
-            ))}
+            { 
+              collections.map(({ id, ...otherCollectionProps }) => (
+                <CollectionPreview key={id} {...otherCollectionProps} />
+              ))
+            }
           </div> */}
 
 

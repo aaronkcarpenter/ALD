@@ -3,6 +3,8 @@ body{
   line-height: 1.41;
   letter-spacing: 0.05em;
   font-family: "Sohne",Arial,sans-serif;
+  min-height: 100vh;
+  /* margin: 0; */
 }
 
 .page-container{
@@ -157,9 +159,26 @@ body{
   border: 1px solid black;
 }
 
+/* media queries  */
+
 @media only screen and (min-width: 1025px){
   .left-side-container{
     padding-left:25px;
     padding-right: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body{
+    font-size: 0.75rem;
+    box-sizing: border-box;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form-container{
+    font-size: 0.75rem;
+    box-sizing: border-box;
   }
 }
