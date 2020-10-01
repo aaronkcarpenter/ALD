@@ -45,6 +45,11 @@ const NavStatic = ({ currentUser }) => {
       console.log(e);
     }
   }
+
+  // const stopUser = async (e) => {
+  //   e.preventDefault();
+  //   if
+  // }
   
   return (
     <div className='container h-100'>
@@ -73,7 +78,7 @@ const NavStatic = ({ currentUser }) => {
         <div className='navbar-wrapper d-lg-flex'>
           <ul className='navbar'>
             <li className='main-nav__item nav'>
-              <a href='/search' className='main-nav__link toggle-submenu'>Search</a>
+              <a href='/search' className='main-nav__link toggle-submenu search-word'>Search</a>
               <form onSubmit={onSubmit} action='/search' className='search-form form-group search-desktop'>
                 {/* <button type='submit' className='search-close' /> */}
                 <input type='text' value={search} onChange={handleChange} className='form-control search-field' placeholder='search for' autoComplete='off' />

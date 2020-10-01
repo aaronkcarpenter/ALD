@@ -1,0 +1,152 @@
+body{
+  font-weight: 400;
+  line-height: 1.41;
+  letter-spacing: 0.05em;
+  font-family: "Sohne",Arial,sans-serif;
+}
+
+.page-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-side-container{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border-left: #e5e5e5 1px solid;
+  height: 100%;
+  width: 50%;
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;;
+}
+
+.disclaimer{
+  text-align: center;
+  font-size: 11px;
+  padding-top: 50px;
+  width: 50%;
+  margin-left: 250px;
+
+}
+
+.login-image{
+  height: 85vh;
+  display: flex;
+  margin-top: 90px;
+}
+
+.form-container-two{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.title > .page-header-two{
+  font-family: "Financier Display",serif;
+  font-weight: 700;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-left: 250px;
+}
+
+.page-header{
+  padding-bottom: 20px;
+}
+
+.email-input{
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid #181818;
+  text-transform: uppercase;
+  font-family: "DIN W01 Regular",Arial,sans-serif;
+  color: #181818;
+  letter-spacing: 0.1em;
+  width: 50%;
+  background: none;
+  line-height: 1;
+  border-radius: 0;
+  overflow: visible;
+  text-align: start;
+  word-spacing: normal;
+  text-indent: 0px;
+  cursor: text;
+  font: 400 13.3333px Arial;
+  margin-left: 250px;
+
+}
+
+.password-input{
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid #181818;
+  text-transform: uppercase;
+  font-family: "DIN W01 Regular",Arial,sans-serif;
+  color: #181818;
+  letter-spacing: 0.1em;
+  width: 50%;
+  background: none;
+  line-height: 1;
+  border-radius: 0;
+  overflow: visible;
+  text-align: start;
+  word-spacing: normal;
+  text-indent: 0px;
+  cursor: text;
+  font: 400 13.3333px Arial;
+  margin-left: 250px;
+}
+
+.forgotten-password-link{
+  transition: all 0.4s linear;
+  text-decoration: none;
+  color: #181818;
+  text-align: right;
+  font-size: 12px;
+  display: flex;
+  margin-left: 250px;
+  margin-top: 10px;
+}
+
+.button{
+  margin-right: 0;
+  background-color: #181818;
+  color: #fff;
+  outline: 0 none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  min-height: 60px;
+  padding: 10px 20px;
+  font-family: "DIN W01 Regular",Arial,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  width: 100%;
+  max-width: 335px;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  margin-top: 15px;
+}
+
+.button:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+@media only screen and (min-width: 1025px){
+  .left-side-container{
+    padding-left:25px;
+    padding-right: 25px;
+  }
+}

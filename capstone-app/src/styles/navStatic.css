@@ -67,6 +67,10 @@ ul{
   position: relative;
 }
 
+.search-word{
+  margin-bottom: -2px;
+}
+
 .my-bag{
   margin-top: -20px;
 }

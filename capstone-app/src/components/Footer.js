@@ -44,7 +44,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className='copyright'>
-          Aime Leon Dore Clone
+          Aaron Carpenter
           <span>©</span>
           2020
         </div>
