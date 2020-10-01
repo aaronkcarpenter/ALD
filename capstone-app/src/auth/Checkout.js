@@ -98,7 +98,7 @@ class Checkout extends Component {
             </div>
             <div className='cart-buttons'>
               <button type='submit' name='update' className='btn btn--light'>
-                Update Cart
+                <a href='/shop-all'>Continue Shopping</a>
               </button>
               <CheckoutModal className='modal-container' show={this.state.show} handleClose={this.hideModal}>
                 <div className='header-container'>

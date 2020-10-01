@@ -95,7 +95,6 @@ export const SignUpFormFinal = () => {
             <img className='login-image' src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/login%2FScreen%20Shot%202020-10-01%20at%2012.52.53%20PM.png?alt=media&token=88bfaaaf-7f44-4e0e-9677-ca836bb3f70f' alt='store' />
           </div>
         </div>
-
       </div>
     )
 }

@@ -247,7 +247,7 @@ class ShopAll extends Component {
             </div>
             <div className='pagination'>
               <span className='prev'>
-              <a href='google.com'></a>
+              <a href='/#'></a>
               </span>
               <span className='page_current'>01</span>
             </div>

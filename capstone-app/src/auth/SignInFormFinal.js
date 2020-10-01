@@ -129,7 +129,7 @@ export const SignInFormFinal = () => {
               </div>
               <div className='text-container title'>
                 <p className='disclaimer'>
-                  <b>Disclaimer</b> To ensure optimal shopping experience, you are required
+                  <b>Disclaimer:</b> To ensure optimal shopping experience, you are required
                   to log in before browsing. Don't worry, it's worth it. If you're a recruiter,
                   simply click the 'Sign In' button above. Welcome & Enjoy!</p>
               </div>

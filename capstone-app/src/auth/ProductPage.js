@@ -1,10 +1,22 @@
 import React from 'react'
 import { connect } from 'react-redux';
 import { addItem } from '../redux/cart/cart.actions';
+import { useHistory } from 'react-router-dom';
+
 
 import '../styles/productPage.css'
 
 const ProductPage = () => {
+
+  const history = useHistory();
+
+  const addToBag = (e) => {
+    try {
+      history.push('/checkout');
+    } catch (e) {
+      console.log(e)
+    }
+  }
   return (
     <div className='product-page-container pdp product d-lg-flex'>
       <div className='product__images'>
@@ -125,7 +137,7 @@ const ProductPage = () => {
                   </div>
                 </div>
                 <div className='atc-box'>
-                  <button type='submit' className='btn btn--dark btn--bag'>
+                  <button onClick={addToBag} type='submit' className='btn btn--dark btn--bag'>
                     <a className='checkout-link' href='/checkout'> Add to Bag </a>
                   </button>
                 </div>
