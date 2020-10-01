@@ -4,6 +4,12 @@ import signIn from './SignIn';
 import { auth, signInWithGoogle } from '../firebase/firebase.utils';
 import '../styles/login.css';
 
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+const provider = new firebase.auth.GoogleAuthProvider();
+provider.setCustomParameters({ prompt: 'select_account' });
+
 export const SignInFormFinal = () => {
   // Declaring new state variables and setting them to an empty string
   const [email, setEmailValue] = useState('');
@@ -31,6 +37,15 @@ export const SignInFormFinal = () => {
     e.preventDefault();
     try{
       history.push('/signup');
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  const signInWithGoogleTest = (e) => {
+    try {
+      auth.signInWithPopup(provider)
+      history.push('/shop-all');
     } catch (e) {
       console.log(e)
     }
@@ -100,25 +115,23 @@ export const SignInFormFinal = () => {
               <div className='form-button-area'>
                 <button
                   className='button'
-                  // disabled={!email || !password}
-                  onClick={signInWithGoogle}
+                  // onClick={signInWithGoogle}
+                  onClick={signInWithGoogleTest}
                 >Sign In With Google
                 </button>
               </div>
               <div className='form-button-area'>
                 <button
                   className='button'
-                  disabled={!email || !password}
-                // onClick={this.routeChange}
                   onClick={handleCreate}
                 > Create Account
                 </button>
               </div>
               <div className='text-container title'>
                 <p className='disclaimer'>
-                  *To ensure optimal experience for visitors, you are required
-                  to log in. Don't worry, it's worth it. If you're a recruiter,
-                  simply click the 'Sign In' button above. Welcome & Enjoy!*</p>
+                  <b>Disclaimer</b> To ensure optimal shopping experience, you are required
+                  to log in before browsing. Don't worry, it's worth it. If you're a recruiter,
+                  simply click the 'Sign In' button above. Welcome & Enjoy!</p>
               </div>
             </form>
           </div>
