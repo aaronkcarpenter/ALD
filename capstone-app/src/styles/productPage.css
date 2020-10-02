@@ -262,6 +262,11 @@ input[type='hidden' i]{
   width: 0;
 }
 
+.swatch-size__item:checked{
+  background-color: #181818;
+  color: white;
+}
+
 input[type='radio']{
   box-sizing: border-box;
   padding: 0;
@@ -269,6 +274,11 @@ input[type='radio']{
 
 input[type='radio']:focus{
   background-color: black;
+  color: white;
+}
+
+input[type='radio']:checked{
+  background-color: #181818;
   color: white;
 }
 

@@ -1,5 +1,5 @@
-import React from 'react'
-import { connect } from 'react-redux';
+import React, { useState } from 'react'
+// import { connect } from 'react-redux';
 import { addItem } from '../redux/cart/cart.actions';
 import { useHistory } from 'react-router-dom';
 
@@ -7,6 +7,8 @@ import { useHistory } from 'react-router-dom';
 import '../styles/productPage.css'
 
 const ProductPage = () => {
+
+  const [state, setState] = useState({ level: 'master' })
 
   const history = useHistory();
 
@@ -17,11 +19,19 @@ const ProductPage = () => {
       console.log(e)
     }
   }
+
+  const handleChange = (e) => {
+    try{
+      setState( '' );
+    } catch(e){
+      console.log(e)
+    }
+  }
   return (
     <div className='product-page-container pdp product d-lg-flex'>
       <div className='product__images'>
         <div className='product__mobile-desc d-lg-none'>
-          <a className='link'>Hoodie</a>
+          <a className='link' href='/shop-all'>Hoodie</a>
           <h1 className='product__title'>ALD Uniform Hoodie</h1>
           <div className='product__pricing'>
             <span className='product__price money'>$185.00</span>
@@ -29,22 +39,22 @@ const ProductPage = () => {
         </div>
         <div className='product__carousel swiper-container'>
           <div className='swiper-wrapper'>
-            <a href='#' className='swiper-slide product__image-item'>
+            <a href='/shop/:id' className='swiper-slide product__image-item'>
               <div className='image-square product__image'>
                 <img src= 'https://cdn.shopify.com/s/files/1/0302/7829/products/tops-3-14_af8824e3-f911-4f84-b0b7-c6c19c09d8da_800x.jpg?v=1599677036' alt='ALD Uniform Hoodie' />
               </div>
             </a>
-            <a href='#' className='swiper-slide product__image-item'>
+            <a href='/shop/:id' className='swiper-slide product__image-item'>
               <div className='image-square product-image'>
                 <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/Aime_FW20_Uniform_Lifestyle_R20058_1600x.jpg?v=1599696678' alt='ALD Uniform Hoodie' />
               </div>
             </a>
-            <a href='#' className='swiper-slide product__image-item'>
+            <a href='/shop/:id' className='swiper-slide product__image-item'>
               <div className='image-square product-image'>
                 <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/Aime_FW20_Uniform_Lifestyle_R20089_800x.jpg?v=1599696678' alt='ALD Uniform Hoodie' />
               </div>
             </a>
-            <a href='#' className='swiper-slide product__image-item'>
+            <a href='/shop/:id' className='swiper-slide product__image-item'>
               <div className='image-square product-image'>
                 <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/Aime_FW20_Uniform_Lifestyle_0786_fd44da17-720a-4ce5-a558-7f3484a575e8_1600x.jpg?v=1599743621' alt='ALD Uniform Hoodie' />
               </div>
@@ -76,27 +86,27 @@ const ProductPage = () => {
                 </a>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/tops-3-18_1947b4f8-f026-48db-81dd-2db247e8ebcb.jpg?v=1599677086' />
+                    <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall2.jpg?alt=media&token=494433ff-ad80-4040-b5be-31e3d11e1d24' />
                   </div>
                 </a>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/tops-3-18_1947b4f8-f026-48db-81dd-2db247e8ebcb.jpg?v=1599677086' />
+                    <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall4.jpg?alt=media&token=06c5d25c-4783-4a83-a82c-5a0b81de2896' />
                   </div>
                 </a>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/tops-3-18_1947b4f8-f026-48db-81dd-2db247e8ebcb.jpg?v=1599677086' />
+                    <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall5.jpg?alt=media&token=bcc6ae2f-2403-47f4-9315-8367b89f01cf' />
                   </div>
                 </a>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/tops-3-18_1947b4f8-f026-48db-81dd-2db247e8ebcb.jpg?v=1599677086' />
+                    <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall6.jpg?alt=media&token=ab6382a2-0481-46f9-8667-f3ab7065489f' />
                   </div>
                 </a>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/tops-3-18_1947b4f8-f026-48db-81dd-2db247e8ebcb.jpg?v=1599677086' />
+                    <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall7.jpg?alt=media&token=6d67683a-d074-46d5-ad70-469e12d1ad17' />
                   </div>
                 </a>
               </div>
@@ -112,28 +122,28 @@ const ProductPage = () => {
                 </div>
                 <div className='swatch-size grid-row grid-row--3 grid-row--lg-6'>
                   <div className='swatch-size__item'>
-                    <input type='radio' name='single-name-option' className='swatch-size__control' />
-                    <label for='size-JET Black /XS' className='swatch-size__label'>XS</label>
+                    <input type='radio' name='single-name-option' className='swatch-size__control' checked={state.level ==='master'} onChange={handleChange} />
+                    <label htmlFor='size-JET Black /XS' className='swatch-size__label'>XS</label>
                   </div>
                   <div className='swatch-size__item'>
                     <input type='radio' name='single-name-option' className='swatch-size__control' />
-                    <label for='size-JET Black /XS' className='swatch-size__label'>S</label>
+                    <label htmlFor='size-JET Black /XS' className='swatch-size__label'>S</label>
                   </div>
                   <div className='swatch-size__item'>
                     <input type='radio' name='single-name-option' className='swatch-size__control' />
-                    <label for='size-JET Black /XS' className='swatch-size__label'>M</label>
+                    <label htmlFor='size-JET Black /XS' className='swatch-size__label'>M</label>
                   </div>
                   <div className='swatch-size__item'>
                     <input type='radio' name='single-name-option' className='swatch-size__control' />
-                    <label for='size-JET Black /XS' className='swatch-size__label'>L</label>
+                    <label htmlFor='size-JET Black /XS' className='swatch-size__label'>L</label>
                   </div>
                   <div className='swatch-size__item'>
                     <input type='radio' name='single-name-option' className='swatch-size__control' />
-                    <label for='size-JET Black /XS' className='swatch-size__label'>XL</label>
+                    <label htmlFor='size-JET Black /XS' className='swatch-size__label'>XL</label>
                   </div>
                   <div className='swatch-size__item'>
                     <input type='radio' name='single-name-option' className='swatch-size__control' />
-                    <label for='size-JET Black /XS' className='swatch-size__label'>XXL</label>
+                    <label htmlFor='size-JET Black /XS' className='swatch-size__label'>XXL</label>
                   </div>
                 </div>
                 <div className='atc-box'>
