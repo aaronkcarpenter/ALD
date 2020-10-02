@@ -81,32 +81,32 @@ const ProductPage = () => {
               <div className='swiper-wrapper'>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/tops-3-18_1947b4f8-f026-48db-81dd-2db247e8ebcb.jpg?v=1599677086' />
+                    <img alt='hoodie-options' src='https://cdn.shopify.com/s/files/1/0302/7829/products/tops-3-18_1947b4f8-f026-48db-81dd-2db247e8ebcb.jpg?v=1599677086' />
                   </div>
                 </a>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall2.jpg?alt=media&token=494433ff-ad80-4040-b5be-31e3d11e1d24' />
+                    <img alt='hoodie-options' src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall2.jpg?alt=media&token=494433ff-ad80-4040-b5be-31e3d11e1d24' />
                   </div>
                 </a>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall4.jpg?alt=media&token=06c5d25c-4783-4a83-a82c-5a0b81de2896' />
+                    <img alt='hoodie-options' src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall4.jpg?alt=media&token=06c5d25c-4783-4a83-a82c-5a0b81de2896' />
                   </div>
                 </a>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall5.jpg?alt=media&token=bcc6ae2f-2403-47f4-9315-8367b89f01cf' />
+                    <img alt='hoodie-options' src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall5.jpg?alt=media&token=bcc6ae2f-2403-47f4-9315-8367b89f01cf' />
                   </div>
                 </a>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall6.jpg?alt=media&token=ab6382a2-0481-46f9-8667-f3ab7065489f' />
+                    <img alt='hoodie-options' src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall6.jpg?alt=media&token=ab6382a2-0481-46f9-8667-f3ab7065489f' />
                   </div>
                 </a>
                 <a href='products/:id' className='swiper-slide swatch-colors__item'>
                   <div className='image-square product-image'>
-                    <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall7.jpg?alt=media&token=6d67683a-d074-46d5-ad70-469e12d1ad17' />
+                    <img alt='hoodie-options' src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FhoodieSmall7.jpg?alt=media&token=6d67683a-d074-46d5-ad70-469e12d1ad17' />
                   </div>
                 </a>
               </div>
