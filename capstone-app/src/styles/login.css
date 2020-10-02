@@ -182,3 +182,16 @@ body{
     box-sizing: border-box;
   }
 }
+
+/* @media only screen and (max-width: 400px) {
+  .title{
+    margin-left: -140px;
+    background-color: orange;
+  }
+}
+
+/* @media only screen and (max-width: 768px) {
+  .email-and-password{
+    margin-left: -140px;
+  }
+} */ 

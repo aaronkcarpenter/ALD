@@ -31,7 +31,7 @@ class Checkout extends Component {
           <div className='title'>
             <h1>
               My Bag
-              <span>(1)</span>
+              <span>(3)</span>
             </h1>
           </div>
           <table className='cart-table'>
@@ -51,7 +51,7 @@ class Checkout extends Component {
                       <img src='https://cdn.shopify.com/s/files/1/0302/7829/products/tops9-13_x100.jpg?v=1598194475' alt='waffle thermal' />
                     </a>
                     <div className='cart-extra-desc'>
-                      <a href='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Ftops-1-13_7ee0f84d-4285-48a3-b577-674a523bb523_800x.jpg?alt=media&token=fa279cb2-01cc-4a38-9b03-2d29bb2fe7b7' className='cart-item__name'>
+                      <a href='/shop/:id' className='cart-item__name'>
                         Waffle Thermal
                       </a>
                       <div className='extra-desc'>
@@ -77,12 +77,79 @@ class Checkout extends Component {
                   <span>$400.23</span>
                 </td>
               </tr>
+              <tr className='cart-item'>
+                <td className='car-item__desc'>
+                  <div className='d-flex'>
+                    <a href='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Ftops-1-13_7ee0f84d-4285-48a3-b577-674a523bb523_800x.jpg?alt=media&token=fa279cb2-01cc-4a38-9b03-2d29bb2fe7b7' className='cart__image' target='_blank'>
+                      <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FcartBlackHoodie.jpg?alt=media&token=14b07cd2-b1ba-4b35-8b4c-ff75dba077d1' alt='black-hoodie' />
+                    </a>
+                    <div className='cart-extra-desc'>
+                      <a href='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Ftops-1-13_7ee0f84d-4285-48a3-b577-674a523bb523_800x.jpg?alt=media&token=fa279cb2-01cc-4a38-9b03-2d29bb2fe7b7' className='cart-item__name'>
+                        ALD Uniform Hoodie
+                      </a>
+                      <div className='extra-desc'>
+                        <div> JET BLACK / L </div>
+                      </div>
+                      <div></div>
+                      <a href='/cart/change?line=1&quantity=0' className='cart__remove'>
+                        <small>Remove</small>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+                <td className='cart-item__quantity'>
+                  <label className='qtylabel'>
+                    <small>QTY</small>
+                  </label>
+                  <input type='number' className='cart-quantity' value='1'/>
+                </td>
+                <td className='cart-item__price'>
+                  <span>$185.00</span>
+                </td>
+                <td className='cart-item__total-price'>
+                  <span>$185.00</span>
+                </td>
+              </tr>
+              <tr className='cart-item'>
+                <td className='car-item__desc'>
+                  <div className='d-flex'>
+                    <a href='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Ftops-1-13_7ee0f84d-4285-48a3-b577-674a523bb523_800x.jpg?alt=media&token=fa279cb2-01cc-4a38-9b03-2d29bb2fe7b7' className='cart__image' target='_blank'>
+                      <img src='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FblueSweats.jpg?alt=media&token=e7b0f6ba-6bbc-4a60-b9be-cacbc05269fb' alt='blue-sweats' />
+                    </a>
+                    <div className='cart-extra-desc'>
+                      <a href='https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fshop-all-product-pictures%2FblackHoodie%2FblueSweats.jpg?alt=media&token=e7b0f6ba-6bbc-4a60-b9be-cacbc05269fb' className='cart-item__name'>
+                        ALD Uniform Sweatpants
+                      </a>
+                      <div className='extra-desc'>
+                        <div> SKY CAPTAIN / M </div>
+                      </div>
+                      <div></div>
+                      <a href='/cart/change?line=1&quantity=0' className='cart__remove'>
+                        <small>Remove</small>
+                      </a>
+                    </div>
+                  </div>
+                </td>
+                <td className='cart-item__quantity'>
+                  <label className='qtylabel'>
+                    <small>QTY</small>
+                  </label>
+                  <input type='number' className='cart-quantity' value='1'/>
+                </td>
+                <td className='cart-item__price'>
+                  <span>$185.00</span>
+                </td>
+                <td className='cart-item__total-price'>
+                  <span>$185.00</span>
+                </td>
+              </tr>
+
             </tbody>
           </table>
           <div className='cart-footer'>
             <div className='cart-footer__item'>
               <span className='cart-subtotal__title'>SUBTOTAL :</span>
-              <span className='cart-subtotal__price'>$400.23</span>
+              <span className='cart-subtotal__price'>$770.23</span>
             </div>
             <div className='cart-footer__item'>
               <span>Shipping</span>

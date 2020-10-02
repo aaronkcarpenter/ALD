@@ -11,6 +11,7 @@ import SignInForm from './auth/SignInForm';
 import SignOutButton from './auth/SignOutButton';
 import ShopAll from './auth/ShopAll';
 import ProductPage from './auth/ProductPage';
+import ProductPageTwo from './auth/ProdPageTwo'
 import ProtectedRoute from './auth/ProtectedRoute'
 import Home from './components/Home'
 import { auth,  createUserProfileDocument } from './firebase/firebase.utils';
@@ -73,7 +74,8 @@ class App extends React.Component {
           <Route path='/inspiration' />
           <Route exact path='/collections/:id' />
           <Route exact path='prior/collections/:id' />
-          <Route exact path='/shop/:id' component={ProductPage} />
+          <Route exact path='/shop/1' component={ProductPage} />
+          <Route exact path='/shop/2' component={ProductPageTwo} />
           <Route exact path='/lookbook/:id' />
           <Route path='/checkout' component={Checkout} />
           {/* <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/home' component={Home} />
