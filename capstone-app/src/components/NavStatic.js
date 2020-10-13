@@ -24,14 +24,24 @@ const NavStatic = ({ currentUser }) => {
     setSearchResults(results);
   }, [search]);
 
+  // When user begins to search, set the state of the search to what is entered 
+  // and when enter is pressed, it will alert user search is occuring 
   const onSubmit = e => {
     e.preventDefault();
-    setSearch(search)
+    setSearch(search);
+    alert(`Submitting search for ${search}`);
   }
 
-  const handleChange = e => {
-    setSearch(e.target.value);
-    console.log(search);
+  const handleChange = word => {
+    // setSearch(e.target.value);
+    setSearch(word);
+    console.log("searching for:", word);
+  };
+
+  // Works as well 
+  const handleChangeTwo = value => {
+    setSearch(value);
+    console.log("value", value);
   };
 
   const history = useHistory();
@@ -81,7 +91,8 @@ const NavStatic = ({ currentUser }) => {
               <a href='/search' className='main-nav__link toggle-submenu search-word'>Search</a>
               <form onSubmit={onSubmit} action='/search' className='search-form form-group search-desktop'>
                 {/* <button type='submit' className='search-close' /> */}
-                <input type='text' value={search} onChange={handleChange} className='form-control search-field' placeholder='search for' autoComplete='off' />
+                {/* <input type='text' value={search} onChange={handleChange} className='form-control search-field' placeholder='search for' autoComplete='off' /> */}
+                <input type='text' value={search} onChange={e => handleChange(e.target.value)} className='form-control search-field' placeholder='search for' autoComplete='off' />
                 <input type='hidden' name='type' value='product' />
                 <button type='submit' className='btn-search' />
               </form>
