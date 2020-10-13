@@ -53,7 +53,13 @@ class ShopAll extends Component {
             </div>
           </div>
 
-          {/* <div className='items-preview'>
+
+
+
+
+          <div className='clothing-container'>
+
+          {/* <div className='items-preview products-collection grid-products grid-products--three product-pic product-image'>
             { 
               collections.map(({ id, ...otherCollectionProps }) => (
                 <CollectionPreview key={id} {...otherCollectionProps} />
@@ -61,10 +67,6 @@ class ShopAll extends Component {
             }
           </div> */}
 
-
-
-
-          <div className='clothing-container'>
             <div className='products-collection grid-products grid-products--three'>
               <a href='/shop/2' className='product-pic'>
                 <div className='product-image square-image'>
