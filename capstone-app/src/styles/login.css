@@ -180,18 +180,93 @@ body{
   .form-container{
     font-size: 0.75rem;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    width: 50%;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .login-image{
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .customer-login{
+    /* height: 50%; */
+    /* width: 50%; */
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .email-and-password{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* background-color: aquamarine; */
+
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .email{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    /* background-color: orangered; */
+    margin-left: -145px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .password{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    /* background-color: blue; */
+    margin-left: -145px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .disclaimer{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    margin-left: 130px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form-button-area{
+    margin-left: 80px;
+    font-size: 0.75rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 75%;
+  }
+}
+
+
 
 /* @media only screen and (max-width: 400px) {
   .title{
     margin-left: -140px;
     background-color: orange;
   }
-}
+} */
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .email-and-password{
-    margin-left: -140px;
+    
   }
-} */ 
+} 

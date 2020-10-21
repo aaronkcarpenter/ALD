@@ -16,6 +16,7 @@ import ProtectedRoute from './auth/ProtectedRoute'
 import Home from './components/Home'
 import { auth,  createUserProfileDocument } from './firebase/firebase.utils';
 import SignInFormFinal from './auth/SignInFormFinal';
+import Inspiration from './components/Inspiration';
 
 // const {isLoading, user } = useAuth();
 
@@ -76,6 +77,7 @@ class App extends React.Component {
           <Route exact path='prior/collections/:id' />
           <Route exact path='/shop/1' component={ProductPage} />
           <Route exact path='/shop/2' component={ProductPageTwo} />
+          <Route path='/brand' component={Inspiration} />
           <Route exact path='/lookbook/:id' />
           <Route path='/checkout' component={Checkout} />
           {/* <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/home' component={Home} />
