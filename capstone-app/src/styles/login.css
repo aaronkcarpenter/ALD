@@ -30,12 +30,25 @@ body{
   justify-content: center;;
 }
 
+.form-button-area{
+  display: flex;
+  justify-content: center;
+}
+
+.text-container{
+  display: flex;
+  justify-content: center;
+  margin-left: -100px;
+  width: 100%;
+}
+
 .disclaimer{
   text-align: center;
   font-size: 11px;
   padding-top: 50px;
-  width: 50%;
-  margin-left: 250px;
+  /* width: 50%; */
+  /* margin-left: 100px; */
+  /* display: flex; */
 
 }
 
@@ -57,6 +70,12 @@ body{
   width: 50%;
 }
 
+.title{
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+}
+
 .title > .page-header{
   font-family: "Financier Display",serif;
   font-weight: 700;
@@ -64,7 +83,14 @@ body{
   margin: 0;
   font-size: 1.5rem;
   line-height: 1;
-  margin-left: 250px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.email-and-password{
+  margin-left: 75px;
+  display: flex;
+  justify-content: center;
 }
 
 .page-header{
@@ -95,8 +121,7 @@ body{
   text-indent: 0px;
   cursor: text;
   font: 400 13.3333px Arial;
-  margin-left: 250px;
-
+  /* margin-left: 250px; */
 }
 
 .password-input{
@@ -117,7 +142,7 @@ body{
   text-indent: 0px;
   cursor: text;
   font: 400 13.3333px Arial;
-  margin-left: 250px;
+  /* margin-left: 250px; */
 }
 
 .forgotten-password-link{
@@ -127,7 +152,7 @@ body{
   text-align: right;
   font-size: 12px;
   display: flex;
-  margin-left: 250px;
+  /* margin-left: 250px; */
   margin-top: 10px;
 }
 
@@ -151,6 +176,7 @@ body{
   text-align: center;
   transition: all 0.4s ease-in-out;
   margin-top: 15px;
+  /* margin-left: 250px; */
 }
 
 .button:hover{
@@ -210,6 +236,7 @@ body{
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin-left: 0;
     /* background-color: aquamarine; */
 
   }
@@ -239,7 +266,7 @@ body{
     display: flex;
     flex-direction: column;
     /* align-content: center; */
-    margin-left: 130px;
+    /* margin-left: 130px; */
     text-align: center;
   }
 }
