@@ -75,7 +75,7 @@ export const SignInFormFinal = () => {
         <div className='form-container'>
           <div className='login-form'>
             <form onSubmit={handleSubmit} className='customer-login' action='/shop-all'>
-              <div className='title'>
+              <div className='title title-one'>
                 <h1 className='page-header'>Login</h1>
               </div>
               <div className='email-and-password'>

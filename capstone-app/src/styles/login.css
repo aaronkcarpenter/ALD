@@ -38,7 +38,7 @@ body{
 .text-container{
   display: flex;
   justify-content: center;
-  margin-left: -100px;
+  margin-left: -150px;
   width: 100%;
 }
 
@@ -47,7 +47,6 @@ body{
   font-size: 11px;
   padding-top: 50px;
   /* width: 50%; */
-  /* margin-left: 100px; */
   /* display: flex; */
 
 }
@@ -70,10 +69,11 @@ body{
   width: 50%;
 }
 
-.title{
+.title-one{
   display: flex;
-  justify-content: center;
-  margin-right: 100px;
+  /* justify-content: center; */
+  /* padding-right: -100px; */
+  padding-left: 170px;
 }
 
 .title > .page-header{
@@ -88,6 +88,7 @@ body{
 }
 
 .email-and-password{
+  /* padding-left: 75px; */
   margin-left: 75px;
   display: flex;
   justify-content: center;
@@ -175,7 +176,7 @@ body{
   margin: 0 auto;
   text-align: center;
   transition: all 0.4s ease-in-out;
-  margin-top: 15px;
+  margin-top: 25px;
   /* margin-left: 250px; */
 }
 
@@ -236,7 +237,7 @@ body{
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-left: 0;
+    padding: 0;
     /* background-color: aquamarine; */
 
   }
@@ -266,7 +267,8 @@ body{
     display: flex;
     flex-direction: column;
     /* align-content: center; */
-    /* margin-left: 130px; */
+    margin-left: -75px;
+    /* padding-right: -25px; */
     text-align: center;
   }
 }
@@ -283,17 +285,17 @@ body{
   }
 }
 
-
-
-/* @media only screen and (max-width: 400px) {
+@media only screen and (min-width: 768px) {
   .title{
-    margin-left: -140px;
-    background-color: orange;
+    /* margin-left: -140px; */
+    /* background-color: orange; */
+    /* padding-left: -400px; */
+    margin-left: 15px;
   }
-} */
+}
 
 @media only screen and (max-width: 768px) {
   .email-and-password{
-    
+    /* padding-left: -30px; */
   }
 } 
