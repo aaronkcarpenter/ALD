@@ -48,6 +48,10 @@ body{
   width: 50%;
 }
 
+.title{
+  padding-left:90px;
+}
+
 .title > .page-header-two{
   font-family: "Financier Display",serif;
   font-weight: 700;
@@ -55,7 +59,7 @@ body{
   margin: 0;
   font-size: 1.5rem;
   line-height: 1;
-  margin-left: 250px;
+  /* margin-left: 250px; */
 }
 
 .page-header{
