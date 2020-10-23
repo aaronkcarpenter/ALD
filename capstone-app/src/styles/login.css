@@ -38,7 +38,7 @@ body{
 .text-container{
   display: flex;
   justify-content: center;
-  margin-left: -150px;
+  padding-left: 0px;
   width: 100%;
 }
 
@@ -47,7 +47,6 @@ body{
   font-size: 11px;
   padding-top: 50px;
   /* width: 50%; */
-  /* display: flex; */
 
 }
 
