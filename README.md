@@ -6,7 +6,7 @@ in sales of high-end fashion products at mid-range prices.
 
 ## Technologies
 * Backend: Firebase, Cloud Firestore, Firebase Storage
-* FrontEnd: React / Redux, CSS3
+* FrontEnd: React / Redux, React Hooks, CSS3
 * Deployment: Firebase
 
 ## Features
@@ -16,7 +16,7 @@ in sales of high-end fashion products at mid-range prices.
 * Responsive and interactive design utilizing CSS & Media Queries
 
 ## Global Components
-The only components utilized everywhere are the navigation bar and the footer.
+The only components utilized everywhere for the application are the navigation bar and the footer.
 **Navigation**
 ![image](markdownImages/Screen%20Shot%202020-09-23%20at%203.51.56%20PM.png)
 **Footer**
