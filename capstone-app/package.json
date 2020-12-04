@@ -35,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Aimé Leon Dore was created and inspired by AimeLeonDore.com. This site specializes in sales of high-end fashion products at mid-range prices.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

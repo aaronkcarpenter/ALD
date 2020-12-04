@@ -40,7 +40,21 @@ body{
   font-family: "DIN W01 Regular",Arial,sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  display: block;
+  /* display: block; */
+}
+
+/* New Dec 2020  */
+.shop-link{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* margin-left: 700%; */
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.original-right{
+  /* margin-left: 800%; */
+  font-weight: 600;
 }
 
 .nav-wrapper{
@@ -72,7 +86,13 @@ ul{
 }
 
 .my-bag{
-  margin-top: -20px;
+  /* margin-top: -20px; */
+  font-weight: 700;
+}
+
+.option{
+  font-weight: 700;
+  
 }
 
 a {
@@ -83,7 +103,9 @@ a {
 }
 
 .site-name{
-  padding-left: 170px;
+  /* padding-left: 170px; */
+  /* padding-left: 400px; */
+  /* padding-left: 150px; */
 }
 
 .search-form{

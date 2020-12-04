@@ -30,14 +30,21 @@ div{
   margin-bottom: 20px;
 }
 
-.title h1, .title h2{
+/* h1{
+  font-family: "Financier Display",serif;
+  letter-spacing: normal;
+  margin: 0;
+  line-height: 1;
+} */
+
+/* .title h1, .title h2{
   font-family: "Financier Display",serif;
   font-weight: 500;
   letter-spacing: normal;
   margin: 0;
   font-size: 1.5rem;
   line-height: 1;
-}
+} */
 
 h1{
   color: #181818;
@@ -48,6 +55,10 @@ h1{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  font-family: "Financier Display",serif;
+  letter-spacing: normal;
+  margin: 0;
+  line-height: 1;
 }
 
 .cart-table{

@@ -27,13 +27,13 @@ class Checkout extends Component {
   render() {
     return (
       <div className='section'>
+        <div>
+          <h1>
+            My Bag
+            <span>(3)</span>
+          </h1>
+        </div>
         <form className='cart' action='/checkout'>
-          <div className='title'>
-            <h1>
-              My Bag
-              <span>(3)</span>
-            </h1>
-          </div>
           <table className='cart-table'>
             <thead className='cart-table__heading'>
               <tr>

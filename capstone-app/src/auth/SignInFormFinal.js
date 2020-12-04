@@ -85,7 +85,7 @@ export const SignInFormFinal = () => {
                     name='email'
                     type='email'
                     value={email}
-                    placeholder='Enter Email'
+                    placeholder='DEMOACCOUNT@GMAIL.COM'
                     required
                     onChange={( e => setEmailValue(e.target.value))} />
                 </div>
@@ -95,7 +95,7 @@ export const SignInFormFinal = () => {
                     name='password'
                     type='password'
                     value={password}
-                    placeholder='Enter Password'
+                    placeholder='DEMOACCOUNT'
                     required
                     onChange={(e => setPasswordValue(e.target.value))} />
                   <label className='forgotten-password'>

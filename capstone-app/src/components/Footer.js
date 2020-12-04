@@ -25,7 +25,7 @@ const Footer = () => {
             </a>
           </li>
           <li className='footer-nav_item'>
-            <a href='https://aaronkcarpenter.com' target='_blank' rel='noopener noreferrer' className='footer-nav__link'>
+            <a href='https://aaronkcarpenter.github.io' target='_blank' rel='noopener noreferrer' className='footer-nav__link'>
               Portfolio
             </a>
           </li>

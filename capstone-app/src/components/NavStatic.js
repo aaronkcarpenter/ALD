@@ -67,10 +67,14 @@ const NavStatic = ({ currentUser }) => {
         <nav className='nav'>
           <div className='nav-wrapper'>
             <ul className='main-nav'>
-              <li className='main-nav__item'>
+              <li className='main-nav__item shop-link'>
                 <a href='/shop-all' className='main-nav__link toggle-submenu nav'>Shop</a>
               </li>
               <li className='main-nav__item'>
+                <a href='/checkout' className='main-nav__link toggle-submenu my-bag nav'>My Bag</a>
+              </li>
+
+              {/* <li className='main-nav__item'>
                 <a href='/shop-all' className='main-nav__link toggle-submenu nav'>Collections</a>
               </li>
               <li className='main-nav__item'>
@@ -78,7 +82,7 @@ const NavStatic = ({ currentUser }) => {
               </li>
               <li className='main-nav__item'>
                 <a href='/shop-all' className='main-nav__link toggle-submenu nav'>Brand</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
@@ -88,13 +92,15 @@ const NavStatic = ({ currentUser }) => {
         <div className='navbar-wrapper d-lg-flex'>
           <ul className='navbar'>
             <li className='main-nav__item nav'>
-              <a href='/search' className='main-nav__link toggle-submenu search-word'>Search</a>
+              {/* <a href='/search' className='main-nav__link toggle-submenu search-word'>Search</a> */}
               <form onSubmit={onSubmit} action='/search' className='search-form form-group search-desktop'>
                 {/* <button type='submit' className='search-close' /> */}
                 {/* <input type='text' value={search} onChange={handleChange} className='form-control search-field' placeholder='search for' autoComplete='off' /> */}
-                <input type='text' value={search} onChange={e => handleChange(e.target.value)} className='form-control search-field' placeholder='search for' autoComplete='off' />
+
+                {/* <input type='text' value={search} onChange={e => handleChange(e.target.value)} className='form-control search-field' placeholder='search for' autoComplete='off' />
                 <input type='hidden' name='type' value='product' />
-                <button type='submit' className='btn-search' />
+                <button type='submit' className='btn-search' /> */}
+
               </form>
               {/* <li className='main-nav__item'>
                 <a href='/logout' className='main-nav__link toggle-submenu'>Log Out</a>
@@ -112,13 +118,13 @@ const NavStatic = ({ currentUser }) => {
             </li>
           </ul>
           <ul>
-            <li className='main-nav__item nav'>
+            {/* <li className='main-nav__item nav'>
               <a href='profile/:id' className='main-nav__link toggle-submenu'>Account</a>
-            </li>
-            <li className='main-nav__item'>
-              <a href='/checkout' className='main-nav__link toggle-submenu my-bag nav '>My Bag</a>
+            </li> */}
+            {/* <li className='main-nav__item'>
+              <a href='/checkout' className='main-nav__link toggle-submenu my-bag nav'>My Bag</a>
               <CartDropdown />
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
