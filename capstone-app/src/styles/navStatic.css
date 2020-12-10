@@ -103,6 +103,7 @@ a {
 }
 
 .site-name{
+  padding-left: 300px;
   /* padding-left: 170px; */
   /* padding-left: 400px; */
   /* padding-left: 150px; */
@@ -125,14 +126,14 @@ form{
 
 button{
   text-transform: none;
-  overflow: visible;
+  /* overflow: visible; */
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
   -webkit-writing-mode: horizontal-tb !important;
   text-rendering: auto;
-  color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+  color: -internal-light-dark(buttontext, rgb(219, 40, 40));
   letter-spacing: normal;
   word-spacing: normal;
   text-indent: 0px;
@@ -275,8 +276,8 @@ input{
 @media only screen and (min-width: 768px){
   .search-close{
     display: block;
-    /* background: url(//cdn.shopify.com/s/files/1/0302/7829/t/112/assets/ico-close.svg?v=1390220…); */
     background-size: 14px 14px;
+    background-color: white;
     width: 14px;
     height: 14px;
     position: absolute;

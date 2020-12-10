@@ -17,6 +17,7 @@ import Home from './components/Home'
 import { auth,  createUserProfileDocument } from './firebase/firebase.utils';
 import SignInFormFinal from './auth/SignInFormFinal';
 import Inspiration from './components/Inspiration';
+import SearchImages from './components/SearchImages';
 
 // const {isLoading, user } = useAuth();
 
@@ -80,6 +81,7 @@ class App extends React.Component {
           <Route path='/brand' component={Inspiration} />
           <Route exact path='/lookbook/:id' />
           <Route path='/checkout' component={Checkout} />
+          <Route path='/search' component={SearchImages} />
           {/* <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/home' component={Home} />
           <ProtectedRoute isAuthed={!!user} isLoading={isLoading} path='/shop-all' component={ShopAll} />
           <ProtectedRoute isAuthed={!!user} isLoading={isLoading} exact path='/profile/:id' />

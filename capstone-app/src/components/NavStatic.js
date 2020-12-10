@@ -6,43 +6,57 @@ import { useHistory } from 'react-router-dom';
 import '../styles/navStatic.css'
 import CartDropdown from './CartDropdown';
 
-const shopping = [
-  'https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2FAimeLeonDore5f5793d73410e25f5793d734277.365138215f5793d734277_800x.jpg?alt=media&token=158f3495-8f5c-4579-b712-806c0e24b24d',
-  'https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2FAimeLeonDore5f5793d7432e425f5793d7433cc.594992625f5793d7433cc_800x.jpg?alt=media&token=5ea3838b-84f8-44d0-b481-e7d7827c810d',
-  'https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fbottoms-3-13_800x.jpg?alt=media&token=a77abd96-8bc0-42bb-93dc-979dfa1a3b22',
+// let shopping = [
+// { url: 'https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2FAimeLeonDore5f5793d73410e25f5793d734277.365138215f5793d734277_800x.jpg?alt=media&token=158f3495-8f5c-4579-b712-806c0e24b24d'},
+// { url: 'https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2FAimeLeonDore5f5793d7432e425f5793d7433cc.594992625f5793d7433cc_800x.jpg?alt=media&token=5ea3838b-84f8-44d0-b481-e7d7827c810d'},
+// { url: 'https://firebasestorage.googleapis.com/v0/b/app-academy-capstone-project.appspot.com/o/shopping%2Fbottoms-3-13_800x.jpg?alt=media&token=a77abd96-8bc0-42bb-93dc-979dfa1a3b22'},
+// ];
+
+let shopping = [
+  'aaron',
+  'dessence',
+  'jordyn',
+  'addison'
 ]
 
 const NavStatic = ({ currentUser }) => {
   
-  const [ search, setSearch ] = useState('');
-  const [ searchResults, setSearchResults ] = useState('');
+  const [ searchTerm, setSearchTerm ] = useState('');
+  const [ searchResults, setSearchResults ] = useState([]);
   
-  useEffect(() => {
-    const results = shopping.filter(sweater => 
-      sweater.toLowerCase().includes(search)
-    ); 
-    setSearchResults(results);
-  }, [search]);
+  // useEffect(() => {
+  //   const results = shopping.filter(garment => 
+  //     garment.includes(searchTerm)
+  //   ); 
+  //   setSearchResults(results);
+  // }, [searchTerm]);
 
   // When user begins to search, set the state of the search to what is entered 
   // and when enter is pressed, it will alert user search is occuring 
   const onSubmit = e => {
     e.preventDefault();
-    setSearch(search);
-    alert(`Submitting search for ${search}`);
+    setSearchTerm(searchTerm);
+    alert(`Submitting search for ${searchTerm}`);
   }
 
   const handleChange = word => {
-    // setSearch(e.target.value);
-    setSearch(word);
+    setSearchTerm(word.target.value);
     console.log("searching for:", word);
   };
 
   // Works as well 
   const handleChangeTwo = value => {
-    setSearch(value);
+    setSearchTerm(value);
     console.log("value", value);
   };
+
+  // const handleChangeThree = value => {
+  //   let oldList = shopping.map(search => {
+  //     return { item: search.item.toLowerCase()}
+  //   })
+  //   setSearch(value);
+  //   console.log("value", value);
+  // };
 
   const history = useHistory();
 
@@ -92,14 +106,19 @@ const NavStatic = ({ currentUser }) => {
         <div className='navbar-wrapper d-lg-flex'>
           <ul className='navbar'>
             <li className='main-nav__item nav'>
-              {/* <a href='/search' className='main-nav__link toggle-submenu search-word'>Search</a> */}
+              <a href='/search' className='main-nav__link toggle-submenu search-word'>Search</a>
               <form onSubmit={onSubmit} action='/search' className='search-form form-group search-desktop'>
-                {/* <button type='submit' className='search-close' /> */}
-                {/* <input type='text' value={search} onChange={handleChange} className='form-control search-field' placeholder='search for' autoComplete='off' /> */}
-
-                {/* <input type='text' value={search} onChange={e => handleChange(e.target.value)} className='form-control search-field' placeholder='search for' autoComplete='off' />
+                <button type='submit' className='search-close' />
+                {/* <input type='search' value={search} onChange={handleChange} className='form-control search-field' placeholder='search for' autoComplete='off' /> */}
+                <input type='search' value={searchTerm} onChange={handleChange} className='form-control search-field' placeholder='search for' autoComplete='off' />
                 <input type='hidden' name='type' value='product' />
-                <button type='submit' className='btn-search' /> */}
+                <button type='submit' className='btn-search' />
+
+                {/* <input type='text' value={search} onChange={e => handleChange(e.target.value)} className='form-control search-field' placeholder='search for' autoComplete='off' /> */}
+                {/* <input type='search' value={search} onChange={e => {
+                  handleChange(this.setSearch({ searchResults: e.target.value})) 
+                  console.log(this.state) }}
+                  className='form-control search-field' placeholder='search for' autoComplete='off' /> */}
 
               </form>
               {/* <li className='main-nav__item'>
@@ -125,6 +144,11 @@ const NavStatic = ({ currentUser }) => {
               <a href='/checkout' className='main-nav__link toggle-submenu my-bag nav'>My Bag</a>
               <CartDropdown />
             </li> */}
+          </ul>
+          <ul>
+            {searchResults.map(item => (
+              <li>{item}</li>
+            ))}
           </ul>
         </div>
       </div>
